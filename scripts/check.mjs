@@ -1,14 +1,17 @@
-import { readFile } from "node:fs/promises";
+import { access, readFile } from "node:fs/promises";
 
-const html = await readFile(new URL("../public/index.html", import.meta.url), "utf8");
-const catalogHtml = await readFile(new URL("../public/catalog.html", import.meta.url), "utf8");
-const catalogScript = await readFile(new URL("../public/catalog.js", import.meta.url), "utf8");
-const commandsHtml = await readFile(new URL("../public/commands.html", import.meta.url), "utf8");
-const commandsScript = await readFile(new URL("../public/commands.js", import.meta.url), "utf8");
-const commandsCss = await readFile(new URL("../public/commands.css", import.meta.url), "utf8");
-const catalog = JSON.parse(await readFile(new URL("../public/catalog-data.json", import.meta.url), "utf8"));
-const commandData = JSON.parse(await readFile(new URL("../public/commands-data.json", import.meta.url), "utf8"));
-const routes = JSON.parse(await readFile(new URL("../public/manus-routes.json", import.meta.url), "utf8"));
+const read = (path) => readFile(new URL(path, import.meta.url), "utf8");
+const [html, catalogHtml, catalogScript, legacyCommandsHtml, catalog, commandData, sections, routes] = await Promise.all([
+  read("../public/index.html"),
+  read("../public/catalog.html"),
+  read("../public/catalog.js"),
+  read("../public/commands.html"),
+  read("../public/catalog-data.json").then(JSON.parse),
+  read("../public/commands-data.json").then(JSON.parse),
+  read("../public/catalog-sections.json").then(JSON.parse),
+  read("../public/manus-routes.json").then(JSON.parse),
+]);
+
 const requiredHome = [
   ["Arabic language and RTL direction", /<html lang="ar" dir="rtl">/],
   ["page title", /<title>Manus IPK/],
@@ -17,77 +20,74 @@ const requiredHome = [
   ["compatibility section", /id="compatibility"/],
   ["FAQ section", /id="faq"/],
   ["responsive viewport", /name="viewport"/],
-  ["relative stylesheet path for project Pages", /href="\.\/styles\.css"/],
-  ["relative script path for project Pages", /src="\.\/script\.js"/],
   ["catalog link from landing page", /href="\.\/catalog\.html"/],
-  ["commands link from landing page", /href="\.\/commands\.html"/],
 ];
 
 const requiredCatalog = [
   ["Arabic language and RTL direction", /<html lang="ar" dir="rtl">/],
   ["catalog title", /<title>كتالوج Manus IPK/],
   ["catalog search input", /id="catalog-search"/],
-  ["catalog category list", /id="catalog-categories"/],
-  ["read-only safety notice", /لا تثبّت عناصر على جهازك ولا تشغّل أوامر طرفية/],
+  ["compact catalog groups", /id="catalog-categories"/],
+  ["read-only notice", /لا يوجد تشغيل أو اتصال بالرسيفر/],
+  ["copy risk warning", /HTTP غير مشفّر[\s\S]*تجاوز فحص TLS/],
+  ["copy button live status", /id="catalog-copy-status"[^>]*aria-live="polite"/],
   ["relative catalog stylesheet", /href="\.\/catalog\.css"/],
   ["relative catalog script", /src="\.\/catalog\.js"/],
-  ["commands page link", /href="\.\/commands\.html"/],
-];
-
-const requiredCommands = [
-  ["Arabic language and RTL direction", /<html lang="ar" dir="rtl">/],
-  ["commands page title", /<title>أوامر التثبيت/],
-  ["search input", /id="command-search"/],
-  ["quick section tabs", /id="command-section-tabs"[^>]*role="group"/],
-  ["category list", /id="command-categories"/],
-  ["copy-only safety statement", /زر النسخ ينسخ النص فقط/],
-  ["unencrypted HTTP and TLS safety warning", /HTTP غير مشفّر[\s\S]*تجاوز فحص TLS/],
-  ["relative commands stylesheet", /href="\.\/commands\.css"/],
-  ["relative commands script", /src="\.\/commands\.js"/],
 ];
 
 const failures = [
   ...requiredHome.filter(([, pattern]) => !pattern.test(html)).map(([name]) => `home: ${name}`),
   ...requiredCatalog.filter(([, pattern]) => !pattern.test(catalogHtml)).map(([name]) => `catalog: ${name}`),
-  ...requiredCommands.filter(([, pattern]) => !pattern.test(commandsHtml)).map(([name]) => `commands page: ${name}`),
 ];
 
-const publicPages = [html, catalogHtml, commandsHtml];
+if (/commands\.html|أوامر التثبيت|عرض أوامر التثبيت/i.test(html)) failures.push("landing page has no separate commands navigation");
+if (/commands\.html|عرض أوامر التثبيت/i.test(catalogHtml)) failures.push("catalog has no link or button for a separate commands page");
+if (!/http-equiv="refresh"[^>]*url=\.\/catalog\.html/.test(legacyCommandsHtml)
+  || !/href="\.\/catalog\.html"/.test(legacyCommandsHtml)) {
+  failures.push("legacy commands route redirects to the main catalog");
+}
+if (/command-grid|commands\.js|commands\.css|command-search/i.test(legacyCommandsHtml)) failures.push("legacy route does not render an independent commands page");
+
+const publicPages = [html, catalogHtml];
 if (publicPages.some((page) => /<a\b[^>]*\bhref=["']https?:\/\//i.test(page))) failures.push("public pages contain no outbound links");
 if (publicPages.some((page) => /المستودع|افتح مستودع|GitHub/i.test(page))) failures.push("public pages contain no repository labels or references");
 
-if (!/fetch\("\.\/catalog-data\.json"\)/.test(catalogScript)) failures.push("catalog data endpoint");
-if (/innerHTML|outerHTML|insertAdjacentHTML/.test(catalogScript)) failures.push("catalog rendering avoids HTML injection APIs");
-if (!/fetch\("\.\/commands-data\.json"\)/.test(commandsScript)) failures.push("commands data endpoint");
-if (!/navigator\.clipboard\.writeText\(command\)/.test(commandsScript)) failures.push("copy uses clipboard without executing commands");
-if (/innerHTML|outerHTML|insertAdjacentHTML|\beval\s*\(|\bnew\s+Function\s*\(/.test(commandsScript)) {
-  failures.push("commands rendering avoids HTML injection and execution APIs");
+if (!/\.\/catalog-data\.json/.test(catalogScript)) failures.push("catalog data endpoint");
+if (!/\.\/commands-data\.json/.test(catalogScript)) failures.push("copy command data endpoint");
+if (!/\.\/catalog-sections\.json/.test(catalogScript)) failures.push("compact sections data endpoint");
+if (!/navigator\.clipboard\.writeText\(command\)/.test(catalogScript)) failures.push("copy writes only to clipboard");
+if (!/makeElement\("button", "command-copy-button", "انسخ الأمر"\)/.test(catalogScript)) failures.push("copy button appears inside matching catalog cards");
+if (!/button\.textContent = "تم النسخ"/.test(catalogScript)) failures.push("successful copy confirms completion");
+if (!/button\.classList\.add\("is-copied"\)/.test(catalogScript)) failures.push("successful copy gets visual feedback");
+if (!/fallback\.hidden = true/.test(catalogScript)) failures.push("manual fallback text hides after successful copy");
+if (/innerHTML|outerHTML|insertAdjacentHTML|\beval\s*\(|\bnew\s+Function\s*\(/.test(catalogScript)) {
+  failures.push("catalog rendering avoids HTML injection and execution APIs");
 }
-if (!/makeElement\("button", "command-copy-button", "انسخ الأمر"\)/.test(commandsScript)) failures.push("each command card has the requested copy-button label");
-if (!/button\.textContent = "تم النسخ"/.test(commandsScript)) failures.push("copy button confirms a successful copy");
-if (!/\.command-copy-button\s*\{[^}]*min-height:\s*32px[^}]*font-size:\s*10px/s.test(commandsCss)) failures.push("per-card copy button is styled compactly");
-if (!/button\.classList\.add\("is-copied"\)/.test(commandsScript) || !/\.command-copy-button\.is-copied/.test(commandsCss)) failures.push("copy success has a visual state");
-if (!/@keyframes\s+copy-success/.test(commandsCss) || !/prefers-reduced-motion:\s*reduce/.test(commandsCss)) failures.push("copy animation respects reduced-motion preferences");
-for (const category of commandData.categories.filter((item) => item.parentId === null)) {
-  if (!commandsScript.includes(`"${category.id}"`)) failures.push(`quick sections include top-level category ${category.id}`);
+if (/fetch\([^)]*https?:|WebSocket|ssh|telnet|child_process|exec\s*\(/i.test(catalogScript)) {
+  failures.push("catalog never connects to or executes commands on a receiver");
 }
 
-if (!Array.isArray(catalog.categories) || catalog.categories.length !== catalog.totals?.categories) {
-  failures.push("catalog category structure");
-}
-if (!Array.isArray(catalog.items) || catalog.items.length !== catalog.totals?.items || catalog.items.length === 0) {
-  failures.push("catalog item structure");
-}
+if (!Array.isArray(catalog.categories) || catalog.categories.length !== catalog.totals?.categories) failures.push("catalog category structure");
+if (!Array.isArray(catalog.items) || catalog.items.length !== catalog.totals?.items || catalog.items.length === 0) failures.push("catalog item structure");
+if (!Array.isArray(sections) || sections.length !== 8) failures.push("catalog displays eight concise thematic groups");
+
 const forbiddenCatalogKeys = new Set(["cmd", "remove_cmd", "path", "icon"]);
 function containsForbiddenCatalogFields(value) {
   if (Array.isArray(value)) return value.some(containsForbiddenCatalogFields);
   if (!value || typeof value !== "object") return false;
   return Object.entries(value).some(([key, child]) => forbiddenCatalogKeys.has(key) || containsForbiddenCatalogFields(child));
 }
-if (containsForbiddenCatalogFields(catalog)) failures.push("raw shell/path/icon fields are excluded from public catalog data");
+if (containsForbiddenCatalogFields(catalog)) failures.push("catalog data excludes raw shell/path/icon fields");
 const catalogCategoryIds = new Set(catalog.categories.map((category) => category.id));
 if (catalog.items.some((item) => !item.name || !catalogCategoryIds.has(item.categoryId) || !catalogCategoryIds.has(item.parentCategoryId))) {
   failures.push("catalog items reference valid categories");
+}
+
+const roots = new Set(catalog.categories.filter((category) => category.parentId === null).map((category) => category.id));
+const groupedRoots = sections.flatMap((section) => section.categoryIds);
+if (new Set(groupedRoots).size !== groupedRoots.length || roots.size !== groupedRoots.length
+  || [...roots].some((root) => !groupedRoots.includes(root))) {
+  failures.push("the eight concise groups cover every root catalog category exactly once");
 }
 
 if (!Array.isArray(commandData.categories) || !Array.isArray(commandData.commands)
@@ -122,6 +122,11 @@ for (const entry of commandData.commands) {
     failures.push("public command data excludes removal, malformed or sensitive commands");
     break;
   }
+  const matchesByNameAndCategory = catalog.items.filter((candidate) => candidate.name === entry.name && candidate.categoryId === entry.categoryId);
+  if (matchesByNameAndCategory.length !== 1) {
+    failures.push("each copy-only command matches exactly one catalog card by name and category");
+    break;
+  }
 }
 if (commandData.categories.some((category) => category.id === "remove" || !catalogCategoryIds.has(category.id))) {
   failures.push("commands use valid non-removal catalog categories");
@@ -129,12 +134,20 @@ if (commandData.categories.some((category) => category.id === "remove" || !catal
 
 const routePaths = new Set(Array.isArray(routes.routes) ? routes.routes.map((route) => route.path) : []);
 if (!routePaths.has("/") || !routePaths.has("/catalog.html") || !routePaths.has("/commands.html")) {
-  failures.push("route manifest includes home, catalog and commands pages");
+  failures.push("route manifest includes home, catalog and legacy redirect");
+}
+for (const file of ["../public/commands.js", "../public/commands.css"]) {
+  try {
+    await access(new URL(file, import.meta.url));
+    failures.push(`${file} retired along with the standalone commands page`);
+  } catch {
+    // Expected: separate-page assets have been removed.
+  }
 }
 
 if (failures.length > 0) {
   console.error(`Validation failed: ${failures.join(", ")}`);
   process.exitCode = 1;
 } else {
-  console.log(`Valid: landing page, display-only catalog (${catalog.items.length} entries), and ${commandData.commands.length} copy-only install commands.`);
+  console.log(`Valid: landing page, catalog (${catalog.items.length} entries), ${sections.length} concise groups, and ${commandData.commands.length} copy-only commands mapped to catalog cards.`);
 }

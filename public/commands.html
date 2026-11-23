@@ -3,94 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#091421" />
-    <meta name="description" content="أوامر تثبيت إضافات Enigma2 للعرض والنسخ فقط. راجع المصدر والتوافق قبل نسخ أي أمر." />
-    <title>أوامر التثبيت — Manus IPK</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./catalog.css" />
-    <link rel="stylesheet" href="./commands.css" />
+    <meta http-equiv="refresh" content="0; url=./catalog.html" />
+    <meta name="robots" content="noindex,follow" />
+    <title>كتالوج الإضافات — Manus IPK</title>
   </head>
-  <body class="catalog-page commands-page">
-    <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="./index.html" aria-label="Manus IPK — الرئيسية">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none"><path d="M10 13h10l9 11-9 11H10l9-11-9-11Z" fill="currentColor" /><path d="M28 13h10l-9 11 9 11H28L19 24l9-11Z" fill="currentColor" opacity=".58" /></svg>
-          </span>
-          <span class="brand-copy"><strong>MANUS IPK</strong><small>أوامر Enigma2</small></span>
-        </a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="فتح القائمة"><span></span><span></span></button>
-        <nav id="main-navigation" class="main-navigation" aria-label="التنقل الرئيسي">
-          <a href="./index.html">الرئيسية</a>
-          <a href="./catalog.html">الكتالوج</a>
-          <a href="./commands.html" aria-current="page">الأوامر</a>
-        </nav>
-      </div>
-    </header>
-
-    <main id="main" class="catalog-main commands-main">
-      <section class="catalog-hero">
-        <div class="container catalog-hero-inner">
-          <div class="catalog-hero-copy">
-            <span class="section-kicker">Manus IPK / أوامر التثبيت</span>
-            <h1>راجع الأمر،<br /><span>ثم انسخه فقط.</span></h1>
-            <p>أوامر التثبيت المعروضة هنا مأخوذة من ملف الإعدادات. الصفحة للقراءة والنسخ فقط؛ لا تشغّل الأوامر ولا تتصل بالرسيفر.</p>
-            <a class="button button-outline" href="./catalog.html">العودة إلى كتالوج الإضافات <span aria-hidden="true">↗</span></a>
-          </div>
-          <div class="catalog-stats" aria-label="ملخص أوامر التثبيت">
-            <article class="catalog-stat"><span class="stat-label">أوامر مؤهلة</span><strong id="command-count">—</strong><small>بعد استبعاد الإزالة</small></article>
-            <article class="catalog-stat"><span class="stat-label">التصنيفات</span><strong id="command-category-count">—</strong><small>متاحة للبحث والتصفية</small></article>
-            <article class="catalog-stat catalog-stat-status"><span class="stat-label">وظيفة الصفحة</span><strong>نسخ فقط</strong><small>لا يوجد تنفيذ أو اتصال</small></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="container commands-workspace" aria-label="استكشاف أوامر التثبيت">
-        <aside class="category-panel" aria-label="تصفية حسب القسم">
-          <div class="panel-heading"><div><span class="section-kicker">التقسيمة</span><h2>الأقسام</h2></div><span class="panel-mark" aria-hidden="true">CMD</span></div>
-          <button class="category-button category-all" id="command-category-all" type="button" data-category="all" aria-pressed="true">
-            <span class="category-name"><span class="category-symbol" aria-hidden="true">#</span> كل الأوامر</span><span class="category-count" id="all-command-count">—</span>
-          </button>
-          <div class="category-tree" id="command-categories"></div>
-        </aside>
-
-        <section class="catalog-content" aria-label="قائمة الأوامر">
-          <div class="command-section-block">
-            <div class="command-section-heading"><span class="section-kicker">تصفّح سريع</span><span>اختر مجموعة من الأوامر</span></div>
-            <div class="command-section-tabs" id="command-section-tabs" role="group" aria-label="مجموعات أوامر التثبيت"></div>
-          </div>
-          <div class="catalog-toolbar">
-            <label class="search-box" for="command-search">
-              <span class="search-icon" aria-hidden="true">⌕</span>
-              <input id="command-search" type="search" autocomplete="off" placeholder="ابحث باسم الإضافة أو القسم أو الأمر..." />
-              <button id="clear-command-search" class="clear-search" type="button" aria-label="مسح البحث" hidden>مسح</button>
-            </label>
-          </div>
-
-          <aside class="catalog-safety-note command-warning" role="note" aria-labelledby="command-warning-title">
-            <span class="safety-icon" aria-hidden="true">!</span>
-            <div>
-              <h2 id="command-warning-title">راجع المصدر والتوافق قبل النسخ</h2>
-              <p>من بين الأوامر المعروضة، يستخدم 74 أمرًا HTTP غير مشفّر، ويحمل 133 مؤشرًا على تجاوز فحص TLS؛ وبعضها ينزّل سكريبتات مباشرة. مصدر الأوامر ملف خارجي ولم تُراجع هذه الأوامر أو تُنفّذ هنا؛ افحص الرابط ومحتوى السكريبت وتوافق جهازك، ولا تنسخ أمرًا لا تفهمه. زر النسخ ينسخ النص فقط، ولا توجد أوامر إزالة في هذه الصفحة.</p>
-            </div>
-          </aside>
-
-          <div class="results-heading"><p id="command-result-summary" aria-live="polite">جارٍ تحميل الأوامر…</p><span class="results-rule" aria-hidden="true"></span></div>
-          <div class="command-grid" id="command-grid"></div>
-          <div class="empty-state" id="command-empty" hidden><span class="empty-mark" aria-hidden="true">⌕</span><h2>لا توجد نتائج</h2><p>جرّب كلمة بحث أخرى أو اختر قسمًا مختلفًا.</p></div>
-          <div class="empty-state command-load-error" id="command-error" hidden><span class="empty-mark" aria-hidden="true">!</span><h2>تعذّر تحميل البيانات</h2><p>أعد تحميل الصفحة لاحقًا. لم يتم تشغيل أي أمر.</p></div>
-          <button class="button load-more" id="command-load-more" type="button" hidden>عرض المزيد</button>
-          <p class="command-copy-status" id="command-copy-status" role="status" aria-live="polite"></p>
-        </section>
-      </section>
+  <body>
+    <main>
+      <h1>تم نقل أوامر التثبيت إلى كروت الإضافات</h1>
+      <p>الأوامر متاحة للنسخ داخل بطاقة الإضافة المطابقة في الكتالوج الرئيسي.</p>
+      <p><a href="./catalog.html">الانتقال إلى كتالوج الإضافات</a></p>
     </main>
-
-    <footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="./index.html">MANUS IPK</a><p>معلومات للمراجعة فقط — لا يوجد تشغيل تلقائي أو اتصال بالرسيفر.</p></div></footer>
-    <script src="./script.js" defer></script>
-    <script src="./commands.js" defer></script>
   </body>
 </html>

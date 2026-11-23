@@ -1,0 +1,10 @@
+[
+  { "id": "favorites", "title": "المفضلة", "categoryIds": ["favourites"] },
+  { "id": "addons", "title": "الإضافات واللوحات", "categoryIds": ["plugins", "novaler", "ciefp", "softcams", "panels"] },
+  { "id": "channels", "title": "القنوات والباقات", "categoryIds": ["channels", "feeds", "picons"] },
+  { "id": "appearance", "title": "الواجهات والمظهر", "categoryIds": ["skins", "bootlogos", "spinners"] },
+  { "id": "system", "title": "النظام وصور الأجهزة", "categoryIds": ["system", "updated-dependencic", "images", "multiboot", "backupimages"] },
+  { "id": "backup", "title": "النسخ والاستعادة", "categoryIds": ["backup", "restore"] },
+  { "id": "tools-media", "title": "الأدوات والوسائط", "categoryIds": ["tools", "media"] },
+  { "id": "other", "title": "أخرى", "categoryIds": ["remove"] }
+]

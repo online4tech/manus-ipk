@@ -27,7 +27,6 @@
         <nav id="main-navigation" class="main-navigation" aria-label="التنقل الرئيسي">
           <a href="./index.html#features">الفكرة</a>
           <a href="./catalog.html" aria-current="page">الكتالوج</a>
-          <a href="./commands.html">أوامر التثبيت</a>
           <a href="./index.html#install">التثبيت</a>
         </nav>
       </div>
@@ -39,21 +38,20 @@
           <div class="catalog-hero-copy">
             <span class="section-kicker">فهرس Manus IPK / 05</span>
             <h1>كتالوج الإضافات<br /><span>والأدوات.</span></h1>
-            <p>تصفّح تقسيمة ملف الإعدادات وابحث عن العناصر حسب الاسم أو القسم. هذه صفحة فهرسة فقط؛ لا تثبّت عناصر على جهازك ولا تشغّل أوامر طرفية.</p>
+            <p>تصفّح الإضافات والأدوات ضمن مجموعات مختصرة، وابحث بالاسم أو القسم. الإضافات المتاح لها أمر تثبيت تتضمن زر نسخ داخل بطاقتها؛ لا يوجد تشغيل أو اتصال بالرسيفر.</p>
             <a class="button button-primary" href="./index.html">العودة إلى الصفحة الرئيسية <span aria-hidden="true">↗</span></a>
-            <a class="button button-outline" href="./commands.html">عرض أوامر التثبيت <span aria-hidden="true">↗</span></a>
           </div>
           <div class="catalog-stats" aria-label="ملخص الكتالوج">
             <article class="catalog-stat"><span class="stat-label">عناصر مفهرسة</span><strong id="catalog-item-count">—</strong><small>اسمًا من الملف المرفق</small></article>
-            <article class="catalog-stat"><span class="stat-label">التصنيفات</span><strong id="catalog-category-count">—</strong><small>رئيسية وفرعية</small></article>
-            <article class="catalog-stat catalog-stat-status"><span class="stat-label">طريقة العرض</span><strong>قراءة فقط</strong><small>بدون تنفيذ أوامر</small></article>
+            <article class="catalog-stat"><span class="stat-label">الأقسام المختصرة</span><strong id="catalog-category-count">—</strong><small>مجموعات واضحة</small></article>
+            <article class="catalog-stat"><span class="stat-label">أوامر متاحة للنسخ</span><strong id="catalog-command-count">—</strong><small>داخل بطاقات الإضافات</small></article>
           </div>
         </div>
       </section>
 
       <section class="container catalog-workspace" aria-label="استكشاف الكتالوج">
         <aside class="category-panel" aria-label="تصفية حسب القسم">
-          <div class="panel-heading"><div><span class="section-kicker">التقسيمة</span><h2>الأقسام</h2></div><span class="panel-mark" aria-hidden="true">01</span></div>
+          <div class="panel-heading"><div><span class="section-kicker">مجموعات مختصرة</span><h2>الأقسام</h2></div><span class="panel-mark" aria-hidden="true">01</span></div>
           <button class="category-button category-all" id="category-all" type="button" data-category="all" aria-pressed="true">
             <span class="category-name"><span class="category-symbol" aria-hidden="true">#</span> كل العناصر</span><span class="category-count" id="all-count">—</span>
           </button>
@@ -79,6 +77,7 @@
           <div class="results-heading"><p id="result-summary" role="status" aria-live="polite">جارٍ تحميل الكتالوج...</p><span class="results-rule" aria-hidden="true"></span></div>
           <div class="catalog-message" id="catalog-message" role="status" hidden></div>
           <div class="item-grid" id="catalog-grid" aria-live="polite"></div>
+          <p class="catalog-copy-status" id="catalog-copy-status" role="status" aria-live="polite"></p>
           <div class="empty-state" id="empty-state" hidden>
             <span class="empty-mark" aria-hidden="true">⌕</span>
             <h2>لا توجد نتائج مطابقة</h2>
@@ -91,7 +90,7 @@
 
       <section class="container catalog-safety-note" aria-labelledby="safety-title">
         <span class="safety-icon" aria-hidden="true">!</span>
-        <div><h2 id="safety-title">تنبيه قبل التثبيت</h2><p>الكتالوج يعرض الأسماء والتصنيفات فقط، ولا يتحقق تلقائيًا من سلامة السكريبتات أو توافقها. راجع مصدر أي ملف وتعليمات صورة جهازك قبل التثبيت، وخذ نسخة احتياطية عند الحاجة.</p></div>
+        <div><h2 id="safety-title">راجع المصدر والتوافق قبل النسخ</h2><p>لا تتحقق الصفحة تلقائيًا من سلامة الأوامر أو توافقها؛ من الأوامر المعروضة 74 يستخدم HTTP غير مشفّر، و133 يحمل مؤشرات على تجاوز فحص TLS، و802 يحمل مؤشرات على تنزيل سكريبتات وتمريرها إلى shell. افحص مصدر الأمر ومحتواه وتعليمات صورة جهازك قبل استخدامه. زر النسخ ينسخ النص فقط؛ لا توجد أوامر إزالة ولا تشغيل أو اتصال بالرسيفر.</p></div>
       </section>
     </main>
 

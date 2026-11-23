@@ -6,12 +6,15 @@ const summary = document.querySelector("#result-summary");
 const loadMoreButton = document.querySelector("#load-more");
 const emptyState = document.querySelector("#empty-state");
 const message = document.querySelector("#catalog-message");
+const copyStatus = document.querySelector("#catalog-copy-status");
 
 if (searchInput && categoryList && grid) {
   const formatter = new Intl.NumberFormat("ar-EG");
   const pageSize = 36;
   let catalog = { categories: [], items: [] };
-  let activeCategory = "all";
+  let sections = [];
+  let commandsById = new Map();
+  let activeSection = "all";
   let visibleLimit = pageSize;
   let sortMode = "source";
 
@@ -32,42 +35,39 @@ if (searchInput && categoryList && grid) {
 
   const categoryMap = () => new Map(catalog.categories.map((category) => [category.id, category]));
 
-  function createCategoryButton(category, child = false) {
+  function rootCategoryId(categoryId, categories = categoryMap()) {
+    const category = categories.get(categoryId);
+    return category?.parentId || category?.id || categoryId;
+  }
+
+  function itemSectionId(item, categories = categoryMap()) {
+    const rootId = rootCategoryId(item.categoryId, categories);
+    return sections.find((section) => section.categoryIds.includes(rootId))?.id || "other";
+  }
+
+  function sectionCount(section) {
+    if (section.id === "all") return catalog.items.length;
+    const categories = categoryMap();
+    return catalog.items.filter((item) => itemSectionId(item, categories) === section.id).length;
+  }
+
+  function createSectionButton(section) {
     const button = document.createElement("button");
     button.type = "button";
-    button.className = child ? "category-button category-button-child" : "category-button";
-    button.dataset.category = category.id;
+    button.className = "category-button";
+    button.dataset.section = section.id;
     button.setAttribute("aria-pressed", "false");
 
     const name = makeElement("span", "category-name");
-    if (!child) name.append(makeElement("span", "category-symbol", category.title.slice(0, 1)));
-    name.append(document.createTextNode(category.title));
-    button.append(name, makeElement("span", "category-count", formatter.format(category.count)));
+    name.append(makeElement("span", "category-symbol", section.title.slice(0, 1)));
+    name.append(document.createTextNode(section.title));
+    button.append(name, makeElement("span", "category-count", formatter.format(sectionCount(section))));
     return button;
   }
 
-  function renderCategoryTree() {
-    const roots = catalog.categories.filter((category) => category.parentId === null);
-    const children = new Map();
-    for (const category of catalog.categories) {
-      if (!category.parentId) continue;
-      if (!children.has(category.parentId)) children.set(category.parentId, []);
-      children.get(category.parentId).push(category);
-    }
-
+  function renderSections() {
     const fragment = document.createDocumentFragment();
-    for (const root of roots) {
-      const group = makeElement("div", "category-group");
-      group.append(createCategoryButton(root));
-      const subcategories = children.get(root.id) || [];
-      if (subcategories.length) {
-        const childList = makeElement("div", "category-children");
-        childList.setAttribute("aria-label", `تصنيفات ${root.title}`);
-        for (const child of subcategories) childList.append(createCategoryButton(child, true));
-        group.append(childList);
-      }
-      fragment.append(group);
-    }
+    for (const section of sections) fragment.append(createSectionButton(section));
     categoryList.replaceChildren(fragment);
   }
 
@@ -77,11 +77,10 @@ if (searchInput && categoryList && grid) {
     let filtered = catalog.items.filter((item) => {
       const category = categories.get(item.categoryId);
       const parent = categories.get(item.parentCategoryId);
-      const inCategory = activeCategory === "all"
-        || item.categoryId === activeCategory
-        || item.parentCategoryId === activeCategory;
-      const searchable = normalize(`${item.name} ${category?.title || ""} ${parent?.title || ""}`);
-      return inCategory && (!query || searchable.includes(query));
+      const command = commandsById.get(item.id);
+      const inSection = activeSection === "all" || itemSectionId(item, categories) === activeSection;
+      const searchable = normalize(`${item.name} ${category?.title || ""} ${parent?.title || ""} ${command?.command || ""}`);
+      return inSection && (!query || searchable.includes(query));
     });
 
     if (sortMode === "asc") filtered = filtered.slice().sort((a, b) => a.name.localeCompare(b.name, "ar"));
@@ -90,10 +89,36 @@ if (searchInput && categoryList && grid) {
   }
 
   function updateActiveButtons() {
-    categoryAll.setAttribute("aria-pressed", String(activeCategory === "all"));
-    categoryList.querySelectorAll("button[data-category]").forEach((button) => {
-      button.setAttribute("aria-pressed", String(button.dataset.category === activeCategory));
+    categoryAll.setAttribute("aria-pressed", String(activeSection === "all"));
+    categoryList.querySelectorAll("button[data-section]").forEach((button) => {
+      button.setAttribute("aria-pressed", String(button.dataset.section === activeSection));
     });
+  }
+
+  async function copyCommand(command, button, name, fallback) {
+    if (!navigator.clipboard || typeof navigator.clipboard.writeText !== "function") {
+      fallback.hidden = false;
+      copyStatus.textContent = "تعذّر الوصول إلى الحافظة؛ يمكنك تحديد نص الأمر الظاهر أسفل البطاقة ونسخه يدويًا.";
+      return;
+    }
+    try {
+      await navigator.clipboard.writeText(command);
+      fallback.hidden = true;
+      button.textContent = "تم النسخ";
+      button.setAttribute("aria-label", `تم نسخ أمر تثبيت ${name}`);
+      button.classList.add("is-copied");
+      copyStatus.textContent = `نُسخ أمر ${name} إلى الحافظة فقط؛ لم يتم تشغيله.`;
+      window.setTimeout(() => {
+        if (button.isConnected) {
+          button.textContent = "انسخ الأمر";
+          button.setAttribute("aria-label", `نسخ أمر تثبيت ${name}`);
+          button.classList.remove("is-copied");
+        }
+      }, 1800);
+    } catch {
+      fallback.hidden = false;
+      copyStatus.textContent = "تعذّر النسخ تلقائيًا؛ يمكنك تحديد نص الأمر الظاهر أسفل البطاقة ونسخه يدويًا.";
+    }
   }
 
   function renderItems() {
@@ -104,7 +129,8 @@ if (searchInput && categoryList && grid) {
 
     visible.forEach((item, index) => {
       const category = categories.get(item.categoryId);
-      const card = makeElement("article", "catalog-item-card");
+      const command = commandsById.get(item.id);
+      const card = makeElement("article", command ? "catalog-item-card catalog-item-card-command" : "catalog-item-card");
       const top = makeElement("div", "item-card-top");
       top.append(
         makeElement("span", "item-index", formatter.format(index + 1).padStart(3, "٠")),
@@ -112,8 +138,22 @@ if (searchInput && categoryList && grid) {
       );
       const title = makeElement("h3", "", item.name);
       const bottom = makeElement("div", "item-card-bottom");
-      bottom.append(makeElement("span", "item-card-label", "مدرج في الملف"), makeElement("span", "item-card-arrow", "↙"));
-      card.append(top, title, bottom);
+      if (command) {
+        const label = makeElement("span", "item-card-label", "أمر تثبيت — للنسخ اليدوي");
+        const button = makeElement("button", "command-copy-button", "انسخ الأمر");
+        button.type = "button";
+        button.setAttribute("aria-label", `نسخ أمر تثبيت ${item.name}`);
+        const fallback = makeElement("pre", "item-command-fallback");
+        fallback.hidden = true;
+        fallback.dir = "ltr";
+        fallback.textContent = command.command;
+        button.addEventListener("click", () => copyCommand(command.command, button, item.name, fallback));
+        bottom.append(label, button);
+        card.append(top, title, bottom, fallback);
+      } else {
+        bottom.append(makeElement("span", "item-card-label", "مدرج في الملف"), makeElement("span", "item-card-arrow", "↙"));
+        card.append(top, title, bottom);
+      }
       fragment.append(card);
     });
 
@@ -126,7 +166,7 @@ if (searchInput && categoryList && grid) {
   }
 
   function resetFilters() {
-    activeCategory = "all";
+    activeSection = "all";
     visibleLimit = pageSize;
     searchInput.value = "";
     document.querySelector("#catalog-sort").value = "source";
@@ -137,15 +177,15 @@ if (searchInput && categoryList && grid) {
   }
 
   categoryList.addEventListener("click", (event) => {
-    const button = event.target.closest("button[data-category]");
+    const button = event.target.closest("button[data-section]");
     if (!button) return;
-    activeCategory = button.dataset.category;
+    activeSection = button.dataset.section;
     visibleLimit = pageSize;
     renderItems();
   });
 
   categoryAll.addEventListener("click", () => {
-    activeCategory = "all";
+    activeSection = "all";
     visibleLimit = pageSize;
     renderItems();
   });
@@ -177,24 +217,55 @@ if (searchInput && categoryList && grid) {
 
   document.querySelector("#reset-catalog").addEventListener("click", resetFilters);
 
-  fetch("./catalog-data.json")
-    .then((response) => {
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      return response.json();
-    })
-    .then((data) => {
-      if (!Array.isArray(data.categories) || !Array.isArray(data.items)) throw new Error("صيغة بيانات الكتالوج غير صالحة.");
-      catalog = data;
-      document.querySelector("#catalog-item-count").textContent = formatter.format(data.items.length);
-      document.querySelector("#catalog-category-count").textContent = formatter.format(data.categories.length);
-      document.querySelector("#all-count").textContent = formatter.format(data.items.length);
-      renderCategoryTree();
+  Promise.all(["./catalog-data.json", "./commands-data.json", "./catalog-sections.json"].map(async (path) => {
+    const response = await fetch(path);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    return response.json();
+  }))
+    .then(([catalogData, commandData, sectionData]) => {
+      if (!Array.isArray(catalogData.categories) || !Array.isArray(catalogData.items)
+        || !Array.isArray(commandData.commands) || !Array.isArray(sectionData)) {
+        throw new Error("صيغة بيانات الكتالوج غير صالحة.");
+      }
+      catalog = catalogData;
+      sections = sectionData;
+      const categories = categoryMap();
+      const itemsById = new Map(catalog.items.map((item) => [item.id, item]));
+      const itemsByNameAndCategory = new Map();
+      for (const item of catalog.items) {
+        const key = `${item.categoryId}\u0000${item.name}`;
+        if (!itemsByNameAndCategory.has(key)) itemsByNameAndCategory.set(key, []);
+        itemsByNameAndCategory.get(key).push(item);
+      }
+      commandsById = new Map();
+      for (const command of commandData.commands) {
+        if (command.categoryId === "remove") continue;
+        const byId = itemsById.get(command.id);
+        let item = byId && byId.name === command.name && byId.categoryId === command.categoryId ? byId : null;
+        if (!item) {
+          const matches = itemsByNameAndCategory.get(`${command.categoryId}\u0000${command.name}`) || [];
+          if (matches.length === 1) item = matches[0];
+        }
+        if (item && !commandsById.has(item.id)) commandsById.set(item.id, command);
+      }
+
+      const sectionRoots = new Set(sectionData.flatMap((section) => section.categoryIds));
+      const roots = new Set(catalog.categories.filter((category) => category.parentId === null).map((category) => category.id));
+      if (sectionRoots.size !== roots.size || [...roots].some((root) => !sectionRoots.has(root))) {
+        throw new Error("مجموعات الأقسام لا تغطي التصنيفات.");
+      }
+
+      document.querySelector("#catalog-item-count").textContent = formatter.format(catalog.items.length);
+      document.querySelector("#catalog-category-count").textContent = formatter.format(sectionData.length);
+      document.querySelector("#catalog-command-count").textContent = formatter.format(commandsById.size);
+      document.querySelector("#all-count").textContent = formatter.format(catalog.items.length);
+      renderSections();
       renderItems();
       message.hidden = true;
     })
     .catch(() => {
-      summary.textContent = "تعذر تحميل بيانات الكتالوج.";
-      message.textContent = "تعذر تحميل الفهرس الآن. أعد تحميل الصفحة، أو ارجع إلى الصفحة الرئيسية.";
+      summary.textContent = "تعذّر تحميل بيانات الكتالوج.";
+      message.textContent = "تعذّر تحميل الفهرس أو أوامر النسخ الآن. أعد تحميل الصفحة، أو ارجع إلى الصفحة الرئيسية.";
       message.hidden = false;
       categoryList.replaceChildren();
       grid.replaceChildren();
