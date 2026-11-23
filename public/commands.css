@@ -2,6 +2,14 @@
 .commands-workspace .category-panel { max-height: calc(100vh - 124px); }
 .commands-workspace .catalog-content { min-width: 0; }
 .commands-workspace .command-warning { margin-bottom: 23px; }
+.command-section-block { margin-bottom: 17px; }
+.command-section-heading { display: flex; align-items: baseline; gap: 10px; margin-bottom: 9px; color: var(--muted-2); font-size: 10px; }
+.command-section-heading .section-kicker { color: var(--teal-bright); font-size: 9px; }
+.command-section-tabs { display: flex; gap: 7px; overflow-x: auto; padding: 2px 1px 8px; scrollbar-width: thin; overscroll-behavior-inline: contain; }
+.command-section-tab { min-height: 34px; display: inline-flex; flex: 0 0 auto; align-items: center; gap: 9px; padding: 6px 10px; border: 1px solid rgba(194, 225, 227, .12); border-radius: 8px; background: rgba(19, 39, 56, .65); color: var(--muted); font: inherit; font-size: 10px; cursor: pointer; transition: color .16s ease, background .16s ease, border-color .16s ease, transform .16s ease; }
+.command-section-tab:hover { transform: translateY(-1px); border-color: rgba(86, 224, 209, .35); color: var(--text); }
+.command-section-tab[aria-pressed="true"] { border-color: rgba(86, 224, 209, .5); background: rgba(86, 224, 209, .13); color: var(--teal-bright); }
+.command-section-count { color: var(--muted-2); font: 9px "IBM Plex Mono", monospace; }
 .command-grid { display: grid; gap: 12px; }
 .command-card { min-width: 0; padding: 17px; border: 1px solid rgba(194, 225, 227, .13); border-radius: 12px; background: linear-gradient(150deg, rgba(19, 39, 56, .82), rgba(12, 28, 41, .92)); }
 .command-card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
@@ -16,6 +24,9 @@
 .command-copy-button { min-height: 32px; display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; gap: 6px; padding: 5px 9px; border: 1px solid rgba(86, 224, 209, .26); border-radius: 7px; background: rgba(86, 224, 209, .08); color: var(--teal-bright); font-size: 10px; font-weight: 750; white-space: nowrap; cursor: pointer; transition: background .18s ease, border-color .18s ease, transform .18s ease; }
 .command-copy-button:hover { transform: translateY(-1px); border-color: var(--teal); background: rgba(86, 224, 209, .14); }
 .command-copy-button:focus-visible { outline: 2px solid var(--teal-bright); outline-offset: 3px; }
+.command-copy-button.is-copied { border-color: var(--teal-bright); background: var(--teal-bright); color: #07141b; box-shadow: 0 0 0 4px rgba(86, 224, 209, .13); animation: copy-success .38s cubic-bezier(.2, .8, .2, 1); }
+.command-copy-button.is-copied::before { content: "✓"; font-size: 11px; }
+@keyframes copy-success { 0% { transform: scale(.94); } 60% { transform: scale(1.07); } 100% { transform: scale(1); } }
 .command-copy-status { min-height: 24px; margin: 9px 0 0; color: var(--teal-bright); font-size: 11px; }
 .command-load-error { border-color: rgba(239, 199, 136, .35); }
 
@@ -24,6 +35,13 @@
   .commands-workspace .category-panel { position: static; max-height: none; padding: 15px 12px 12px; }
   .commands-workspace .category-tree { max-height: 260px; grid-template-columns: repeat(2, minmax(0, 1fr)); align-content: start; gap: 3px; }
   .command-card { padding: 13px; }
+  .command-section-block { margin-bottom: 13px; }
   .command-code { max-height: 210px; padding: 11px; }
   .command-code code { font-size: 11px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .command-section-tab,
+  .command-copy-button { transition: none; }
+  .command-copy-button.is-copied { animation: none; }
 }

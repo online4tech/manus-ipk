@@ -38,6 +38,7 @@ const requiredCommands = [
   ["Arabic language and RTL direction", /<html lang="ar" dir="rtl">/],
   ["commands page title", /<title>أوامر التثبيت/],
   ["search input", /id="command-search"/],
+  ["quick section tabs", /id="command-section-tabs"[^>]*role="group"/],
   ["category list", /id="command-categories"/],
   ["copy-only safety statement", /زر النسخ ينسخ النص فقط/],
   ["unencrypted HTTP and TLS safety warning", /HTTP غير مشفّر[\s\S]*تجاوز فحص TLS/],
@@ -65,6 +66,11 @@ if (/innerHTML|outerHTML|insertAdjacentHTML|\beval\s*\(|\bnew\s+Function\s*\(/.t
 if (!/makeElement\("button", "command-copy-button", "انسخ الأمر"\)/.test(commandsScript)) failures.push("each command card has the requested copy-button label");
 if (!/button\.textContent = "تم النسخ"/.test(commandsScript)) failures.push("copy button confirms a successful copy");
 if (!/\.command-copy-button\s*\{[^}]*min-height:\s*32px[^}]*font-size:\s*10px/s.test(commandsCss)) failures.push("per-card copy button is styled compactly");
+if (!/button\.classList\.add\("is-copied"\)/.test(commandsScript) || !/\.command-copy-button\.is-copied/.test(commandsCss)) failures.push("copy success has a visual state");
+if (!/@keyframes\s+copy-success/.test(commandsCss) || !/prefers-reduced-motion:\s*reduce/.test(commandsCss)) failures.push("copy animation respects reduced-motion preferences");
+for (const category of commandData.categories.filter((item) => item.parentId === null)) {
+  if (!commandsScript.includes(`"${category.id}"`)) failures.push(`quick sections include top-level category ${category.id}`);
+}
 
 if (!Array.isArray(catalog.categories) || catalog.categories.length !== catalog.totals?.categories) {
   failures.push("catalog category structure");

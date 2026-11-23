@@ -7,11 +7,22 @@ const loadMoreButton = document.querySelector("#command-load-more");
 const emptyState = document.querySelector("#command-empty");
 const errorState = document.querySelector("#command-error");
 const copyStatus = document.querySelector("#command-copy-status");
+const sectionTabList = document.querySelector("#command-section-tabs");
 
-if (searchInput && categoryList && grid) {
+if (searchInput && categoryList && grid && sectionTabList) {
   const formatter = new Intl.NumberFormat("ar-EG");
   const pageSize = 24;
+  const sectionDefinitions = [
+    { id: "all", title: "كل الأوامر", categoryIds: null },
+    { id: "addons", title: "الإضافات", categoryIds: ["plugins", "novaler", "ciefp", "softcams"] },
+    { id: "channels", title: "القنوات والوسائط", categoryIds: ["channels", "feeds", "media", "picons"] },
+    { id: "appearance", title: "المظهر والواجهات", categoryIds: ["skins", "spinners", "bootlogos", "panels"] },
+    { id: "system", title: "النظام والأدوات", categoryIds: ["tools", "system", "multiboot", "images", "updated-dependencic"] },
+    { id: "maintenance", title: "النسخ والاستعادة", categoryIds: ["backupimages", "backup", "restore"] },
+    { id: "favorites", title: "المفضلة", categoryIds: ["favourites"] },
+  ];
   let data = { categories: [], commands: [] };
+  let activeSection = "all";
   let activeCategory = "all";
   let visibleLimit = pageSize;
 
@@ -31,6 +42,11 @@ if (searchInput && categoryList && grid) {
   };
 
   const categoryMap = () => new Map(data.categories.map((category) => [category.id, category]));
+
+  function categoryRootId(categoryId, categories = categoryMap()) {
+    const category = categories.get(categoryId);
+    return category?.parentId || category?.id || categoryId;
+  }
 
   function createCategoryButton(category, child = false) {
     const button = document.createElement("button");
@@ -69,24 +85,50 @@ if (searchInput && categoryList && grid) {
     categoryList.replaceChildren(fragment);
   }
 
+  function renderSectionTabs() {
+    const categories = categoryMap();
+    const fragment = document.createDocumentFragment();
+    for (const section of sectionDefinitions) {
+      const count = section.id === "all"
+        ? data.commands.length
+        : data.commands.filter((entry) => section.categoryIds.includes(categoryRootId(entry.categoryId, categories))).length;
+      const button = makeElement("button", "command-section-tab");
+      button.type = "button";
+      button.dataset.section = section.id;
+      button.setAttribute("aria-pressed", String(activeSection === section.id));
+      button.append(
+        makeElement("span", "command-section-name", section.title),
+        makeElement("span", "command-section-count", formatter.format(count)),
+      );
+      fragment.append(button);
+    }
+    sectionTabList.replaceChildren(fragment);
+  }
+
   function matchingCommands() {
     const query = normalize(searchInput.value);
     const categories = categoryMap();
+    const activeSectionDefinition = sectionDefinitions.find((section) => section.id === activeSection);
     return data.commands.filter((entry) => {
       const category = categories.get(entry.categoryId);
       const parent = category?.parentId ? categories.get(category.parentId) : category;
+      const inSection = activeSection === "all"
+        || activeSectionDefinition?.categoryIds.includes(categoryRootId(entry.categoryId, categories));
       const inCategory = activeCategory === "all"
         || entry.categoryId === activeCategory
         || category?.parentId === activeCategory;
       const searchable = normalize(`${entry.name} ${category?.title || ""} ${parent?.title || ""} ${entry.command}`);
-      return inCategory && (!query || searchable.includes(query));
+      return inSection && inCategory && (!query || searchable.includes(query));
     });
   }
 
   function updateActiveButtons() {
-    categoryAll.setAttribute("aria-pressed", String(activeCategory === "all"));
+    categoryAll.setAttribute("aria-pressed", String(activeCategory === "all" && activeSection === "all"));
     categoryList.querySelectorAll("button[data-category]").forEach((button) => {
       button.setAttribute("aria-pressed", String(button.dataset.category === activeCategory));
+    });
+    sectionTabList.querySelectorAll("button[data-section]").forEach((button) => {
+      button.setAttribute("aria-pressed", String(button.dataset.section === activeSection));
     });
   }
 
@@ -98,10 +140,17 @@ if (searchInput && categoryList && grid) {
     try {
       await navigator.clipboard.writeText(command);
       const originalLabel = button.dataset.originalLabel;
+      const originalAriaLabel = button.getAttribute("aria-label");
       button.textContent = "تم النسخ";
+      button.setAttribute("aria-label", `تم نسخ أمر تثبيت ${name}`);
+      button.classList.add("is-copied");
       copyStatus.textContent = `نُسخ أمر ${name} إلى الحافظة فقط؛ لم يتم تشغيله.`;
       window.setTimeout(() => {
-        if (button.isConnected) button.textContent = originalLabel;
+        if (button.isConnected) {
+          button.textContent = originalLabel;
+          button.setAttribute("aria-label", originalAriaLabel);
+          button.classList.remove("is-copied");
+        }
       }, 1800);
     } catch {
       copyStatus.textContent = "تعذّر النسخ تلقائيًا؛ حدّد نص الأمر لنسخه يدويًا.";
@@ -156,11 +205,23 @@ if (searchInput && categoryList && grid) {
     const button = event.target.closest("button[data-category]");
     if (!button) return;
     activeCategory = button.dataset.category;
+    const rootId = categoryRootId(activeCategory);
+    activeSection = sectionDefinitions.find((section) => section.categoryIds?.includes(rootId))?.id || "all";
+    visibleLimit = pageSize;
+    renderCommands();
+  });
+
+  sectionTabList.addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-section]");
+    if (!button) return;
+    activeSection = button.dataset.section;
+    activeCategory = "all";
     visibleLimit = pageSize;
     renderCommands();
   });
 
   categoryAll.addEventListener("click", () => {
+    activeSection = "all";
     activeCategory = "all";
     visibleLimit = pageSize;
     renderCommands();
@@ -196,6 +257,7 @@ if (searchInput && categoryList && grid) {
       document.querySelector("#command-category-count").textContent = formatter.format(data.totals.categories);
       document.querySelector("#all-command-count").textContent = formatter.format(data.totals.commands);
       renderCategories();
+      renderSectionTabs();
       renderCommands();
     })
     .catch(() => {
