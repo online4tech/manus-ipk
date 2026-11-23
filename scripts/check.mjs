@@ -11,6 +11,7 @@ const [html, catalogHtml, catalogScript, legacyCommandsHtml, catalog, commandDat
   read("../public/catalog-sections.json").then(JSON.parse),
   read("../public/manus-routes.json").then(JSON.parse),
 ]);
+const sharedStyles = await read("../public/styles.css");
 
 const requiredHome = [
   ["Arabic language and RTL direction", /<html lang="ar" dir="rtl">/],
@@ -41,6 +42,17 @@ const failures = [
   ...requiredHome.filter(([, pattern]) => !pattern.test(html)).map(([name]) => `home: ${name}`),
   ...requiredCatalog.filter(([, pattern]) => !pattern.test(catalogHtml)).map(([name]) => `catalog: ${name}`),
 ];
+
+for (const [page, source] of [["home", html], ["catalog", catalogHtml]]) {
+  const logos = [...source.matchAll(/<img\b[^>]*class="brand-logo"[^>]*>/g)].map(([tag]) => tag);
+  if (logos.length !== 2 || logos.some((tag) => !/\bwidth="160"\s+height="53"/.test(tag))) {
+    failures.push(`${page}: header and footer logos have bounded HTML dimensions`);
+  }
+}
+if (!/\.site-header\s*\{\s*position:\s*relative;/.test(sharedStyles)
+  || /\.site-header\s*\{[^}]*position:\s*sticky/s.test(sharedStyles)) {
+  failures.push("shared header scrolls away instead of staying fixed");
+}
 
 if ([html, catalogHtml].some((page) => /[٠-٩۰-۹]/.test(page))) failures.push("public pages use English numerals");
 if (!/new Intl\.NumberFormat\("en-US"\)/.test(catalogScript) || /padStart\(3, "٠"\)/.test(catalogScript)) {
