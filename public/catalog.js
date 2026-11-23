@@ -9,7 +9,7 @@ const message = document.querySelector("#catalog-message");
 const copyStatus = document.querySelector("#catalog-copy-status");
 
 if (searchInput && categoryList && grid) {
-  const formatter = new Intl.NumberFormat("ar-EG");
+  const formatter = new Intl.NumberFormat("en-US");
   const pageSize = 36;
   let catalog = { categories: [], items: [] };
   let sections = [];
@@ -133,7 +133,7 @@ if (searchInput && categoryList && grid) {
       const card = makeElement("article", command ? "catalog-item-card catalog-item-card-command" : "catalog-item-card");
       const top = makeElement("div", "item-card-top");
       top.append(
-        makeElement("span", "item-index", formatter.format(index + 1).padStart(3, "٠")),
+        makeElement("span", "item-index", formatter.format(index + 1).padStart(3, "0")),
         makeElement("span", "item-category", category?.title || "عنصر"),
       );
       const title = makeElement("h3", "", item.name);

@@ -21,6 +21,7 @@ const requiredHome = [
   ["FAQ section", /id="faq"/],
   ["responsive viewport", /name="viewport"/],
   ["catalog link from landing page", /href="\.\/catalog\.html"/],
+  ["Online4Tech logo asset", /class="brand-logo" src="\.\/online4tech-logo\.webp"/],
 ];
 
 const requiredCatalog = [
@@ -33,12 +34,23 @@ const requiredCatalog = [
   ["copy button live status", /id="catalog-copy-status"[^>]*aria-live="polite"/],
   ["relative catalog stylesheet", /href="\.\/catalog\.css"/],
   ["relative catalog script", /src="\.\/catalog\.js"/],
+  ["Online4Tech logo asset", /class="brand-logo" src="\.\/online4tech-logo\.webp"/],
 ];
 
 const failures = [
   ...requiredHome.filter(([, pattern]) => !pattern.test(html)).map(([name]) => `home: ${name}`),
   ...requiredCatalog.filter(([, pattern]) => !pattern.test(catalogHtml)).map(([name]) => `catalog: ${name}`),
 ];
+
+if ([html, catalogHtml].some((page) => /[٠-٩۰-۹]/.test(page))) failures.push("public pages use English numerals");
+if (!/new Intl\.NumberFormat\("en-US"\)/.test(catalogScript) || /padStart\(3, "٠"\)/.test(catalogScript)) {
+  failures.push("catalog counts and item indices use English numerals");
+}
+try {
+  await access(new URL("../public/online4tech-logo.webp", import.meta.url));
+} catch {
+  failures.push("optimized Online4Tech logo is present in public assets");
+}
 
 if (/commands\.html|أوامر التثبيت|عرض أوامر التثبيت/i.test(html)) failures.push("landing page has no separate commands navigation");
 if (/commands\.html|عرض أوامر التثبيت/i.test(catalogHtml)) failures.push("catalog has no link or button for a separate commands page");
