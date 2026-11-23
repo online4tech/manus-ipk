@@ -19,9 +19,9 @@ npm run dev
 
 يفحص سير `.github/workflows/ci.yml` الصفحة عند الدفع إلى `main` وعند فتح أو تحديث Pull Request يستهدف `main`. ينفذ `npm ci` ثم `npm test` ثم `npm run build`، ويرفع ناتج `dist/` كـ artifact لمدة 7 أيام.
 
-ينشر سير `.github/workflows/deploy-pages.yml` الموقع تلقائيًا إلى GitHub Pages عند الدفع إلى `main`، ويمكن تشغيله يدويًا من تبويب **Actions**. لا ينشر الـPull Request مباشرة. يحتاج إلى إعداد GitHub Pages مرة واحدة: افتح **Settings → Pages → Build and deployment** واختر **GitHub Actions** كمصدر النشر. لا يحتاج المشروع إلى أسرار أو رموز وصول.
+ينشر سير `.github/workflows/deploy-pages.yml` الموقع تلقائيًا إلى GitHub Pages عند الدفع إلى `main`، ويمكن تشغيله يدويًا من تبويب **Actions**. لا ينشر الـPull Request مباشرة. تم ضبط مصدر GitHub Pages على **GitHub Actions**؛ ولا يحتاج المشروع إلى أسرار أو رموز وصول.
 
-الموقع ثابت ويُبنى بلا خادم أو قاعدة بيانات. GitHub Pages متاح للمستودعات العامة ضمن GitHub Free، مع مراعاة حدود الاستخدام الرسمية للخدمة. [مستند GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
+الموقع ثابت ويُبنى بلا خادم أو قاعدة بيانات. [افتح صفحة GitHub Pages المنشورة](https://online4tech.github.io/manus-ipk/). الاستضافة متاحة للمستودعات العامة ضمن GitHub Free مع مراعاة حدود الاستخدام الرسمية للخدمة. [مستند GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
 
 ## محتوى الصفحة
 

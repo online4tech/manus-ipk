@@ -5,4 +5,4 @@
 - [x] **CI:** أضف سير GitHub Actions يشغّل الفحوصات والبناء عند الدفع وفتح Pull Request.
 - [x] **النشر على Manus:** الموقع منشور للعامة؛ إعداد المشروع الحالي لا يفعّل قاعدة بيانات أو خادم تطبيق.
 - [x] **خصوصية GitHub:** اجعل مستودع `manus-ipk` عامًا بناءً على طلب المستخدم لتمكين الاستضافة عبر GitHub Pages المجاني.
-- [ ] **GitHub Pages:** أضف Workflow للنشر، فعّل Pages باستخدام Actions، وتأكد من نجاح النشر ورابط الصفحة.
+- [x] **GitHub Pages:** أضف Workflow للنشر، فعّل Pages بمصدر GitHub Actions، وتأكد من نجاح النشر وظهور الصفحة العامة وأصول CSS وJavaScript على الرابط `https://online4tech.github.io/manus-ipk/`.
