@@ -13,17 +13,15 @@ npm run build
 npm run dev
 ```
 
-يفتح خادم المعاينة محليًا على المنفذ 3000. ينتج أمر البناء الملفات الجاهزة للاستضافة في `dist/`.
+يفتح خادم المعاينة على المنفذ 3000. ينتج أمر البناء الملفات الجاهزة للاستضافة في `dist/`.
 
-## CI الحالي
+## CI وCD
 
-يعمل سير GitHub Actions الموجود في `.github/workflows/ci.yml` عند كل دفع إلى `main`، وعند فتح أو تحديث Pull Request يستهدف `main`، ويمكن تشغيله يدويًا. ينفذ `npm ci` ثم `npm test` ثم `npm run build`، ويرفع ناتج `dist/` كـ artifact لمدة 7 أيام. صلاحياته للقراءة فقط.
+يفحص سير `.github/workflows/ci.yml` الصفحة عند الدفع إلى `main` وعند فتح أو تحديث Pull Request يستهدف `main`. ينفذ `npm ci` ثم `npm test` ثم `npm run build`، ويرفع ناتج `dist/` كـ artifact لمدة 7 أيام.
 
-هذا إعداد **CI** للبناء والتحقق، وليس نشرًا عامًا: لا يرفع الموقع إلى Pages أو مضيف خارجي ولا يحتاج أسرارًا أو رموز وصول.
+ينشر سير `.github/workflows/deploy-pages.yml` الموقع تلقائيًا إلى GitHub Pages عند الدفع إلى `main`، ويمكن تشغيله يدويًا من تبويب **Actions**. لا ينشر الـPull Request مباشرة. يحتاج إلى إعداد GitHub Pages مرة واحدة: افتح **Settings → Pages → Build and deployment** واختر **GitHub Actions** كمصدر النشر. لا يحتاج المشروع إلى أسرار أو رموز وصول.
 
-## تفعيل النشر لاحقًا (CD)
-
-إذا رغبت بنشر الموقع، اختر أولًا جهة الاستضافة وحدد ما إذا كان الموقع سيصبح عامًا. للاستضافة عبر GitHub Pages، افحص أن الخطة تسمح بالنشر من هذا المستودع الخاص، ثم افتح **Settings → Pages → Build and deployment** واختر **GitHub Actions**، وأضف سير نشر مخصصًا يبني `dist/` ويرفعه إلى Pages. لا تغيّر خصوصية المستودع ولا تفعّل النشر العام دون قرار صريح؛ قد تتباين إتاحة Pages للمستودعات الخاصة بحسب خطة GitHub وإعداد الحساب.
+الموقع ثابت ويُبنى بلا خادم أو قاعدة بيانات. GitHub Pages متاح للمستودعات العامة ضمن GitHub Free، مع مراعاة حدود الاستخدام الرسمية للخدمة. [مستند GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
 
 ## محتوى الصفحة
 
