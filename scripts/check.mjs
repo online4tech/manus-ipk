@@ -5,6 +5,7 @@ const catalogHtml = await readFile(new URL("../public/catalog.html", import.meta
 const catalogScript = await readFile(new URL("../public/catalog.js", import.meta.url), "utf8");
 const commandsHtml = await readFile(new URL("../public/commands.html", import.meta.url), "utf8");
 const commandsScript = await readFile(new URL("../public/commands.js", import.meta.url), "utf8");
+const commandsCss = await readFile(new URL("../public/commands.css", import.meta.url), "utf8");
 const catalog = JSON.parse(await readFile(new URL("../public/catalog-data.json", import.meta.url), "utf8"));
 const commandData = JSON.parse(await readFile(new URL("../public/commands-data.json", import.meta.url), "utf8"));
 const routes = JSON.parse(await readFile(new URL("../public/manus-routes.json", import.meta.url), "utf8"));
@@ -15,7 +16,6 @@ const requiredHome = [
   ["installation section", /id="install"/],
   ["compatibility section", /id="compatibility"/],
   ["FAQ section", /id="faq"/],
-  ["GitHub repository link", /https:\/\/github\.com\/online4tech\/manus-ipk/],
   ["responsive viewport", /name="viewport"/],
   ["relative stylesheet path for project Pages", /href="\.\/styles\.css"/],
   ["relative script path for project Pages", /src="\.\/script\.js"/],
@@ -51,6 +51,10 @@ const failures = [
   ...requiredCommands.filter(([, pattern]) => !pattern.test(commandsHtml)).map(([name]) => `commands page: ${name}`),
 ];
 
+const publicPages = [html, catalogHtml, commandsHtml];
+if (publicPages.some((page) => /<a\b[^>]*\bhref=["']https?:\/\//i.test(page))) failures.push("public pages contain no outbound links");
+if (publicPages.some((page) => /المستودع|افتح مستودع|GitHub/i.test(page))) failures.push("public pages contain no repository labels or references");
+
 if (!/fetch\("\.\/catalog-data\.json"\)/.test(catalogScript)) failures.push("catalog data endpoint");
 if (/innerHTML|outerHTML|insertAdjacentHTML/.test(catalogScript)) failures.push("catalog rendering avoids HTML injection APIs");
 if (!/fetch\("\.\/commands-data\.json"\)/.test(commandsScript)) failures.push("commands data endpoint");
@@ -58,6 +62,9 @@ if (!/navigator\.clipboard\.writeText\(command\)/.test(commandsScript)) failures
 if (/innerHTML|outerHTML|insertAdjacentHTML|\beval\s*\(|\bnew\s+Function\s*\(/.test(commandsScript)) {
   failures.push("commands rendering avoids HTML injection and execution APIs");
 }
+if (!/makeElement\("button", "command-copy-button", "انسخ الأمر"\)/.test(commandsScript)) failures.push("each command card has the requested copy-button label");
+if (!/button\.textContent = "تم النسخ"/.test(commandsScript)) failures.push("copy button confirms a successful copy");
+if (!/\.command-copy-button\s*\{[^}]*min-height:\s*32px[^}]*font-size:\s*10px/s.test(commandsCss)) failures.push("per-card copy button is styled compactly");
 
 if (!Array.isArray(catalog.categories) || catalog.categories.length !== catalog.totals?.categories) {
   failures.push("catalog category structure");

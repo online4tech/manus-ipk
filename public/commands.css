@@ -13,7 +13,7 @@
 .command-code code { font: 12px/1.8 "IBM Plex Mono", "Cascadia Code", Consolas, monospace; }
 .command-card-footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 12px; }
 .command-source-label { color: var(--muted-2); font-size: 10px; }
-.command-copy-button { min-height: 39px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 7px 13px; border: 1px solid rgba(86, 224, 209, .26); border-radius: 8px; background: rgba(86, 224, 209, .08); color: var(--teal-bright); font-size: 11px; font-weight: 750; cursor: pointer; transition: background .18s ease, border-color .18s ease, transform .18s ease; }
+.command-copy-button { min-height: 32px; display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; gap: 6px; padding: 5px 9px; border: 1px solid rgba(86, 224, 209, .26); border-radius: 7px; background: rgba(86, 224, 209, .08); color: var(--teal-bright); font-size: 10px; font-weight: 750; white-space: nowrap; cursor: pointer; transition: background .18s ease, border-color .18s ease, transform .18s ease; }
 .command-copy-button:hover { transform: translateY(-1px); border-color: var(--teal); background: rgba(86, 224, 209, .14); }
 .command-copy-button:focus-visible { outline: 2px solid var(--teal-bright); outline-offset: 3px; }
 .command-copy-status { min-height: 24px; margin: 9px 0 0; color: var(--teal-bright); font-size: 11px; }

@@ -200,7 +200,6 @@ h2 { margin-bottom: 0; font-size: clamp(31px, 3.4vw, 44px); font-weight: 800; li
   .main-navigation { position: absolute; top: calc(100% + 1px); inset-inline: 0; display: none; align-items: stretch; gap: 0; padding: 10px 18px 18px; border-bottom: 1px solid var(--line); background: rgba(9, 20, 33, .98); }
   .main-navigation.is-open { display: flex; flex-direction: column; }
   .main-navigation > a:not(.button) { padding: 11px 4px; border-bottom: 1px solid rgba(194, 225, 227, .07); }
-  .main-navigation .nav-repo { margin-top: 13px; }
   .hero { min-height: 0; padding-block: 62px 55px; }
   .hero-layout { grid-template-columns: 1fr; gap: 24px; }
   .hero-copy { max-width: none; }

@@ -134,9 +134,9 @@ if (searchInput && categoryList && grid) {
 
       const footer = makeElement("div", "command-card-footer");
       const source = makeElement("span", "command-source-label", "نص للنسخ — راجع المصدر أولًا");
-      const button = makeElement("button", "command-copy-button", "نسخ الأمر");
+      const button = makeElement("button", "command-copy-button", "انسخ الأمر");
       button.type = "button";
-      button.dataset.originalLabel = "نسخ الأمر";
+      button.dataset.originalLabel = "انسخ الأمر";
       button.setAttribute("aria-label", `نسخ أمر تثبيت ${entry.name}`);
       button.addEventListener("click", () => copyCommand(entry.command, button, entry.name));
       footer.append(source, button);
