@@ -106,8 +106,9 @@
 .catalog-item-card-command { min-height: 162px; }
 .catalog-item-card-command .item-card-bottom { gap: 7px; }
 .catalog-item-card .item-card-label { min-width: 0; font-size: 9px; }
-.command-copy-button { min-height: 32px; display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; gap: 6px; padding: 5px 9px; border: 1px solid rgba(86, 224, 209, .26); border-radius: 7px; background: rgba(86, 224, 209, .08); color: var(--teal-bright); font: 750 10px var(--font); white-space: nowrap; cursor: pointer; transition: background .18s ease, border-color .18s ease, transform .18s ease; }
-.command-copy-button:hover { transform: translateY(-1px); border-color: var(--teal); background: rgba(86, 224, 209, .14); }
+.command-copy-button { min-height: 36px; display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; gap: 7px; padding: 7px 12px; border: 1px solid var(--teal); border-radius: 8px; background: var(--teal); color: #07141b; box-shadow: 0 4px 13px rgba(86, 224, 209, .16); font: 800 11px var(--font); white-space: nowrap; cursor: pointer; transition: background .18s ease, border-color .18s ease, transform .18s ease, box-shadow .18s ease; }
+.command-copy-button::before { content: "⧉"; font-size: 14px; line-height: 1; }
+.command-copy-button:hover { transform: translateY(-1px); border-color: var(--teal-bright); background: var(--teal-bright); box-shadow: 0 6px 16px rgba(86, 224, 209, .25); }
 .command-copy-button:focus-visible { outline: 2px solid var(--teal-bright); outline-offset: 3px; }
 .command-copy-button.is-copied { border-color: var(--teal-bright); background: var(--teal-bright); color: #07141b; box-shadow: 0 0 0 4px rgba(86, 224, 209, .13); animation: copy-success .38s cubic-bezier(.2, .8, .2, 1); }
 .command-copy-button.is-copied::before { content: "✓"; font-size: 11px; }

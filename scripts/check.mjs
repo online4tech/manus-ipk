@@ -12,6 +12,7 @@ const [html, catalogHtml, catalogScript, legacyCommandsHtml, catalog, commandDat
   read("../public/manus-routes.json").then(JSON.parse),
 ]);
 const sharedStyles = await read("../public/styles.css");
+const catalogStyles = await read("../public/catalog.css");
 
 const requiredHome = [
   ["Arabic language and RTL direction", /<html lang="ar" dir="rtl">/],
@@ -33,8 +34,8 @@ const requiredCatalog = [
   ["read-only notice", /لا يوجد تشغيل أو اتصال بالرسيفر/],
   ["copy risk warning", /HTTP غير مشفّر[\s\S]*تجاوز فحص TLS/],
   ["copy button live status", /id="catalog-copy-status"[^>]*aria-live="polite"/],
-  ["relative catalog stylesheet", /href="\.\/catalog\.css"/],
-  ["relative catalog script", /src="\.\/catalog\.js"/],
+  ["versioned relative catalog stylesheet", /href="\.\/catalog\.css\?v=20261123-copy-visibility"/],
+  ["versioned relative catalog script", /src="\.\/catalog\.js\?v=20261123-copy-visibility"/],
   ["Online4Tech logo asset", /class="brand-logo" src="\.\/online4tech-logo\.webp"/],
 ];
 
@@ -52,6 +53,11 @@ for (const [page, source] of [["home", html], ["catalog", catalogHtml]]) {
 if (!/\.site-header\s*\{\s*position:\s*relative;/.test(sharedStyles)
   || /\.site-header\s*\{[^}]*position:\s*sticky/s.test(sharedStyles)) {
   failures.push("shared header scrolls away instead of staying fixed");
+}
+if (!/\.command-copy-button\s*\{[^}]*min-height:\s*36px/s.test(catalogStyles)
+  || !/\.command-copy-button\s*\{[^}]*background:\s*var\(--teal\)/s.test(catalogStyles)
+  || !/\.command-copy-button::before/.test(catalogStyles)) {
+  failures.push("copy buttons are prominent, filled, and carry a copy icon");
 }
 
 if ([html, catalogHtml].some((page) => /[٠-٩۰-۹]/.test(page))) failures.push("public pages use English numerals");
