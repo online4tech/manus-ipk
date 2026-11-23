@@ -1,0 +1,14 @@
+{
+  "name": "manus-ipk-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Arabic RTL landing page for the Manus IPK Enigma2 project.",
+  "scripts": {
+    "dev": "python3 -m http.server 3000 --directory public --bind 0.0.0.0",
+    "test": "node scripts/check.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
