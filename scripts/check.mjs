@@ -34,7 +34,7 @@ const requiredCatalog = [
   ["read-only notice", /لا يوجد تشغيل أو اتصال بالرسيفر/],
   ["copy risk warning", /HTTP غير مشفّر[\s\S]*تجاوز فحص TLS/],
   ["copy button live status", /id="catalog-copy-status"[^>]*aria-live="polite"/],
-  ["versioned relative catalog stylesheet", /href="\.\/catalog\.css\?v=20261123-copy-visibility"/],
+  ["versioned relative catalog stylesheet", /href="\.\/catalog\.css\?v=20261123-wide-catalog"/],
   ["versioned relative catalog script", /src="\.\/catalog\.js\?v=20261123-copy-visibility"/],
   ["Online4Tech logo asset", /class="brand-logo" src="\.\/online4tech-logo\.webp"/],
 ];
@@ -58,6 +58,11 @@ if (!/\.command-copy-button\s*\{[^}]*min-height:\s*36px/s.test(catalogStyles)
   || !/\.command-copy-button\s*\{[^}]*background:\s*var\(--teal\)/s.test(catalogStyles)
   || !/\.command-copy-button::before/.test(catalogStyles)) {
   failures.push("copy buttons are prominent, filled, and carry a copy icon");
+}
+if (!/\.catalog-page\s+\.container\s*\{\s*width:\s*min\(1600px,\s*calc\(100% - 64px\)\)/.test(catalogStyles)
+  || !/@media\s*\(min-width:\s*1500px\)\s*\{\s*\.item-grid\s*\{\s*grid-template-columns:\s*repeat\(4,\s*minmax\(0,\s*1fr\)\)/s.test(catalogStyles)
+  || !/@media\s*\(max-width:\s*760px\)[\s\S]*?\.catalog-page\s+\.container\s*\{\s*width:\s*min\(calc\(100% - 36px\),\s*540px\)/.test(catalogStyles)) {
+  failures.push("catalog uses wide desktop space while preserving compact mobile gutters");
 }
 
 if ([html, catalogHtml].some((page) => /[٠-٩۰-۹]/.test(page))) failures.push("public pages use English numerals");
