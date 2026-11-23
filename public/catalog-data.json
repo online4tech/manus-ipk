@@ -1,0 +1,5281 @@
+{
+  "version": 1,
+  "source": "config.json — أسماء وتصنيفات فقط",
+  "totals": {
+    "items": 841,
+    "categories": 37,
+    "rootCategories": 22
+  },
+  "categories": [
+    {
+      "id": "favourites",
+      "title": "المفضلة",
+      "parentId": null,
+      "count": 19
+    },
+    {
+      "id": "updated-dependencic",
+      "title": "الاعتماديات والتحديثات",
+      "parentId": null,
+      "count": 7
+    },
+    {
+      "id": "backupimages",
+      "title": "نسخ صور الأنظمة",
+      "parentId": null,
+      "count": 9
+    },
+    {
+      "id": "panels",
+      "title": "اللوحات",
+      "parentId": null,
+      "count": 17
+    },
+    {
+      "id": "plugins",
+      "title": "الإضافات",
+      "parentId": null,
+      "count": 162
+    },
+    {
+      "id": "novaler",
+      "title": "Novaler",
+      "parentId": null,
+      "count": 12
+    },
+    {
+      "id": "channels",
+      "title": "القنوات",
+      "parentId": null,
+      "count": 80
+    },
+    {
+      "id": "other_channels",
+      "title": "قوائم متنوعة",
+      "parentId": "channels",
+      "count": 13
+    },
+    {
+      "id": "ciefp_channels",
+      "title": "قوائم Ciefp",
+      "parentId": "channels",
+      "count": 17
+    },
+    {
+      "id": "morph883_channels",
+      "title": "قوائم Morph883",
+      "parentId": "channels",
+      "count": 23
+    },
+    {
+      "id": "vaninbal_channels",
+      "title": "قوائم Vaninbal",
+      "parentId": "channels",
+      "count": 27
+    },
+    {
+      "id": "feeds",
+      "title": "الترددات والباقات",
+      "parentId": null,
+      "count": 15
+    },
+    {
+      "id": "bootlogos",
+      "title": "شعارات الإقلاع",
+      "parentId": null,
+      "count": 14
+    },
+    {
+      "id": "spinners",
+      "title": "مؤشرات التحميل",
+      "parentId": null,
+      "count": 36
+    },
+    {
+      "id": "tools",
+      "title": "الأدوات",
+      "parentId": null,
+      "count": 43
+    },
+    {
+      "id": "system",
+      "title": "النظام",
+      "parentId": null,
+      "count": 11
+    },
+    {
+      "id": "media",
+      "title": "الوسائط",
+      "parentId": null,
+      "count": 71
+    },
+    {
+      "id": "ciefp",
+      "title": "إضافات Ciefp",
+      "parentId": null,
+      "count": 41
+    },
+    {
+      "id": "multiboot",
+      "title": "الإقلاع المتعدد",
+      "parentId": null,
+      "count": 11
+    },
+    {
+      "id": "softcams",
+      "title": "أدوات Softcam",
+      "parentId": null,
+      "count": 27
+    },
+    {
+      "id": "backup",
+      "title": "النسخ الاحتياطي",
+      "parentId": null,
+      "count": 15
+    },
+    {
+      "id": "restore",
+      "title": "الاستعادة",
+      "parentId": null,
+      "count": 14
+    },
+    {
+      "id": "skins",
+      "title": "الواجهات والثيمات",
+      "parentId": null,
+      "count": 115
+    },
+    {
+      "id": "openatv_skins",
+      "title": "OpenATV",
+      "parentId": "skins",
+      "count": 27
+    },
+    {
+      "id": "teamnitro_skins",
+      "title": "TeamNitro",
+      "parentId": "skins",
+      "count": 7
+    },
+    {
+      "id": "openbh_skins",
+      "title": "OpenBH",
+      "parentId": "skins",
+      "count": 21
+    },
+    {
+      "id": "egami_skins",
+      "title": "Egami",
+      "parentId": "skins",
+      "count": 7
+    },
+    {
+      "id": "openpli_py3_skins",
+      "title": "OpenPLi 3",
+      "parentId": "skins",
+      "count": 8
+    },
+    {
+      "id": "openspa_skins",
+      "title": "OpenSpa",
+      "parentId": "skins",
+      "count": 4
+    },
+    {
+      "id": "openvix_skins",
+      "title": "OpenViX",
+      "parentId": "skins",
+      "count": 8
+    },
+    {
+      "id": "openpli_py2_skins",
+      "title": "OpenPLi 2",
+      "parentId": "skins",
+      "count": 10
+    },
+    {
+      "id": "pure2_skins",
+      "title": "Pure2",
+      "parentId": "skins",
+      "count": 7
+    },
+    {
+      "id": "display_skins",
+      "title": "شاشات العرض",
+      "parentId": "skins",
+      "count": 13
+    },
+    {
+      "id": "plugin-xtreamity_skins",
+      "title": "Xtreamity",
+      "parentId": "skins",
+      "count": 3
+    },
+    {
+      "id": "images",
+      "title": "صور الأنظمة",
+      "parentId": null,
+      "count": 41
+    },
+    {
+      "id": "picons",
+      "title": "شعارات القنوات",
+      "parentId": null,
+      "count": 49
+    },
+    {
+      "id": "remove",
+      "title": "الإزالة",
+      "parentId": null,
+      "count": 32
+    }
+  ],
+  "items": [
+    {
+      "id": "favourites-1",
+      "name": "Ajpanel (إدارة الملفات)",
+      "categoryId": "favourites",
+      "parentCategoryId": "favourites"
+    },
+    {
+      "id": "favourites-2",
+      "name": "ArabicSavior (مصحح اللغة العربية)",
+      "categoryId": "favourites",
+      "parentCategoryId": "favourites"
+    },
+    {
+      "id": "favourites-3",
+      "name": "BootlogoSwapper V2.4 (بوت لوجو متعدد)",
+      "categoryId": "favourites",
+      "parentCategoryId": "favourites"
+    },
+    {
+      "id": "favourites-4",
+      "name": "BouquetMakerXtream (تحويل iptv الي المفضلات)",
+      "categoryId": "favourites",
+      "parentCategoryId": "favourites"
+    },
+    {
+      "id": "favourites-5",
+      "name": "Cccaminfo_All-Python (بيانات الـ CCCam)",
+      "categoryId": "favourites",
+      "parentCategoryId": "favourites"
+    },
+    {
+      "id": "favourites-6",
+      "name": "CrashLogoViewer_1.9 (تصفح الكراشات)",
+      "categoryId": "favourites",
+      "parentCategoryId": "favourites"
+    },
+    {
+      "id": "favourites-7",
+      "name": "Epg Grabber (دليل القنوات)",
+      "categoryId": "favourites",
+      "parentCategoryId": "favourites"
+    },
+    {
+      "id": "favourites-8",
+      "name": "FuryBissPro (جالب الفيدات)",
+      "categoryId": "favourites",
+      "parentCategoryId": "favourites"
+    },
+    {
+      "id": "favourites-9",
+      "name": "KeyAdder (مفاتيح الشفرات)",
+      "categoryId": "favourites",
+      "parentCategoryId": "favourites"
+    },
+    {
+      "id": "favourites-10",
+      "name": "RaedQuickSignal (بيان إشارة للقنوات)",
+      "categoryId": "favourites",
+      "parentCategoryId": "favourites"
+    },
+    {
+      "id": "favourites-11",
+      "name": "SetPicon - modded by Emil (مدير البيكونات)",
+      "categoryId": "favourites",
+      "parentCategoryId": "favourites"
+    },
+    {
+      "id": "favourites-12",
+      "name": "SkyBlueBlindScan (بحث عشوائي ذكي عن الترددات والفيدات)",
+      "categoryId": "favourites",
+      "parentCategoryId": "favourites"
+    },
+    {
+      "id": "favourites-13",
+      "name": "SkyBlueScan (تنظيم احترافي لقوائم الاقمار والمفضلات)",
+      "categoryId": "favourites",
+      "parentCategoryId": "favourites"
+    },
+    {
+      "id": "favourites-14",
+      "name": "SubsSupportPro-By-Mohammed-Nasr (ترجمة الأفلام)",
+      "categoryId": "favourites",
+      "parentCategoryId": "favourites"
+    },
+    {
+      "id": "favourites-15",
+      "name": "Xstreamity (مشغل iptv)",
+      "categoryId": "favourites",
+      "parentCategoryId": "favourites"
+    },
+    {
+      "id": "favourites-16",
+      "name": "xtraevent_By-M-Nasr (لوجو البرامج)",
+      "categoryId": "favourites",
+      "parentCategoryId": "favourites"
+    },
+    {
+      "id": "favourites-17",
+      "name": "Cccam",
+      "categoryId": "favourites",
+      "parentCategoryId": "favourites"
+    },
+    {
+      "id": "favourites-18",
+      "name": "Ncam_v15.7",
+      "categoryId": "favourites",
+      "parentCategoryId": "favourites"
+    },
+    {
+      "id": "favourites-19",
+      "name": "Oscam By Levi45",
+      "categoryId": "favourites",
+      "parentCategoryId": "favourites"
+    },
+    {
+      "id": "updated-dependencic-1",
+      "name": "Updated-All-Dependencic (تحميل الحزم المهمة)",
+      "categoryId": "updated-dependencic",
+      "parentCategoryId": "updated-dependencic"
+    },
+    {
+      "id": "updated-dependencic-2",
+      "name": "Wget (أداة تحميل مهمة جداً)",
+      "categoryId": "updated-dependencic",
+      "parentCategoryId": "updated-dependencic"
+    },
+    {
+      "id": "updated-dependencic-3",
+      "name": "Curl (أداة تحميل مهمة جداً)",
+      "categoryId": "updated-dependencic",
+      "parentCategoryId": "updated-dependencic"
+    },
+    {
+      "id": "updated-dependencic-4",
+      "name": "Opkg Tools_1.4 (حزمة مهمة للصورة)",
+      "categoryId": "updated-dependencic",
+      "parentCategoryId": "updated-dependencic"
+    },
+    {
+      "id": "updated-dependencic-5",
+      "name": "Opkg Tools_1.5 (حزمة مهمة للصورة)",
+      "categoryId": "updated-dependencic",
+      "parentCategoryId": "updated-dependencic"
+    },
+    {
+      "id": "updated-dependencic-6",
+      "name": "Update-Astra-sm Plugin (حزمة مهمة للبث المتعدد)",
+      "categoryId": "updated-dependencic",
+      "parentCategoryId": "updated-dependencic"
+    },
+    {
+      "id": "updated-dependencic-7",
+      "name": "Update-Astra-sm-Config (حزمة مهمة للبث المتعدد)",
+      "categoryId": "updated-dependencic",
+      "parentCategoryId": "updated-dependencic"
+    },
+    {
+      "id": "backupimages-1",
+      "name": "EGAMI (تحديث الحزم وتحميل إضافات مهمة)",
+      "categoryId": "backupimages",
+      "parentCategoryId": "backupimages"
+    },
+    {
+      "id": "backupimages-2",
+      "name": "OpenATV (تحديث الحزم وتحميل إضافات مهمة)",
+      "categoryId": "backupimages",
+      "parentCategoryId": "backupimages"
+    },
+    {
+      "id": "backupimages-3",
+      "name": "OpenBH (تحديث الحزم وتحميل إضافات مهمة)",
+      "categoryId": "backupimages",
+      "parentCategoryId": "backupimages"
+    },
+    {
+      "id": "backupimages-4",
+      "name": "OpenPli Py3 (تحديث الحزم وتحميل إضافات مهمة)",
+      "categoryId": "backupimages",
+      "parentCategoryId": "backupimages"
+    },
+    {
+      "id": "backupimages-5",
+      "name": "OpenVix (تحديث الحزم وتحميل إضافات مهمة)",
+      "categoryId": "backupimages",
+      "parentCategoryId": "backupimages"
+    },
+    {
+      "id": "backupimages-6",
+      "name": "OpenDroid (تحديث الحزم وتحميل إضافات مهمة)",
+      "categoryId": "backupimages",
+      "parentCategoryId": "backupimages"
+    },
+    {
+      "id": "backupimages-7",
+      "name": "OpenSpa (تحديث الحزم وتحميل إضافات مهمة)",
+      "categoryId": "backupimages",
+      "parentCategoryId": "backupimages"
+    },
+    {
+      "id": "backupimages-8",
+      "name": "Pure2 (تحديث الحزم وتحميل إضافات مهمة)",
+      "categoryId": "backupimages",
+      "parentCategoryId": "backupimages"
+    },
+    {
+      "id": "backupimages-9",
+      "name": "OpenPli Py2 (تحديث الحزم وتحميل إضافات مهمة)",
+      "categoryId": "backupimages",
+      "parentCategoryId": "backupimages"
+    },
+    {
+      "id": "panels-1",
+      "name": "Ajpanel (إدارة الملفات)",
+      "categoryId": "panels",
+      "parentCategoryId": "panels"
+    },
+    {
+      "id": "panels-2",
+      "name": "dreamosat-downloader (لوحة تحميل الإضافات)",
+      "categoryId": "panels",
+      "parentCategoryId": "panels"
+    },
+    {
+      "id": "panels-3",
+      "name": "EmilPanelPro (لوحة تحميل الإضافات)",
+      "categoryId": "panels",
+      "parentCategoryId": "panels"
+    },
+    {
+      "id": "panels-4",
+      "name": "EnigmaPlay (متجر اضافات)",
+      "categoryId": "panels",
+      "parentCategoryId": "panels"
+    },
+    {
+      "id": "panels-5",
+      "name": "Epanel (لوحة تحميل الإضافات)",
+      "categoryId": "panels",
+      "parentCategoryId": "panels"
+    },
+    {
+      "id": "panels-6",
+      "name": "linuxsat-panel (لوحة تحميل الإضافات)",
+      "categoryId": "panels",
+      "parentCategoryId": "panels"
+    },
+    {
+      "id": "panels-7",
+      "name": "levi45emulator (لوحة تحكم السوفت كام)",
+      "categoryId": "panels",
+      "parentCategoryId": "panels"
+    },
+    {
+      "id": "panels-8",
+      "name": "levi45-AddonsManager (لوحة تحميل الإضافات)",
+      "categoryId": "panels",
+      "parentCategoryId": "panels"
+    },
+    {
+      "id": "panels-9",
+      "name": "Levi45MulticamManager (لوحة تحميل الكامات)",
+      "categoryId": "panels",
+      "parentCategoryId": "panels"
+    },
+    {
+      "id": "panels-10",
+      "name": "MohamedStore (لوحة تحميل الإضافات)",
+      "categoryId": "panels",
+      "parentCategoryId": "panels"
+    },
+    {
+      "id": "panels-11",
+      "name": "Novaler-Store (لوحة تحميل الإضافات)",
+      "categoryId": "panels",
+      "parentCategoryId": "panels"
+    },
+    {
+      "id": "panels-12",
+      "name": "Panelaio (لوحة تحميل أضافات)",
+      "categoryId": "panels",
+      "parentCategoryId": "panels"
+    },
+    {
+      "id": "panels-13",
+      "name": "S4a Updater (لوحة تحميل الإضافات)",
+      "categoryId": "panels",
+      "parentCategoryId": "panels"
+    },
+    {
+      "id": "panels-14",
+      "name": "SatVenusPanel (لوحة تحميل الإضافات)",
+      "categoryId": "panels",
+      "parentCategoryId": "panels"
+    },
+    {
+      "id": "panels-15",
+      "name": "SkyBlueStore (لوحة تحميل الإضافات)",
+      "categoryId": "panels",
+      "parentCategoryId": "panels"
+    },
+    {
+      "id": "panels-16",
+      "name": "Tspanel (لوحة تحميل الإضافات)",
+      "categoryId": "panels",
+      "parentCategoryId": "panels"
+    },
+    {
+      "id": "panels-17",
+      "name": "TvAddon-Panel (لوحة تحميل الإضافات)",
+      "categoryId": "panels",
+      "parentCategoryId": "panels"
+    },
+    {
+      "id": "plugins-1",
+      "name": "ArabicSavior (مصحح اللغة العربية)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-2",
+      "name": "Abertis-Auto-Switcher (تشغيل باقة ابيرنس المالتي ستريم علي الهسباسات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-3",
+      "name": "AdenChManager (مدير القنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-4",
+      "name": "AiSubtitles (خاص بالترجمة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-5",
+      "name": "Acherone (تصفح السكريبتات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-6",
+      "name": "AdvancedBootLogoSwapper-By-M-Nasr (صانع بوت لوجو)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-7",
+      "name": "Advanced-Screen-Shot (أخذ لقطة للشاشة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-8",
+      "name": "Alajre (الأجر)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-9",
+      "name": "AlternativeSoftcamManager (ادارة الايميوهات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-10",
+      "name": "AlternativeSoftCamManager_iet5 (ادارة الايميوهات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-11",
+      "name": "AlMoaddin Modded by Emil (المؤذن)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-12",
+      "name": "Ansite (أنصت)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-13",
+      "name": "Apod (معلومات عن كوكب الأرض)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-14",
+      "name": "Apsattv",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-15",
+      "name": "Astronomy (حركة الكواكب)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-16",
+      "name": "Athan Times (مواقيت الصلاة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-17",
+      "name": "Atilehd (مدير الثيمات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-18",
+      "name": "AutoBiss (جلب شفرات بيس اوتوماتيك)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-19",
+      "name": "AutoSub (مترجم البث المباشر للقنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-20",
+      "name": "AutoZap Recovery (تصحيح بث القنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-21",
+      "name": "automatic-fullbackup (نسخ احتياطي للصورة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-22",
+      "name": "Auto-DCW-Key-Add (مفاتيح الشفرات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-23",
+      "name": "Azkar Almuslim (أذكار المسلم)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-24",
+      "name": "BackupAndFlash-mod-Emil (نسخ احتياطي للصورة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-25",
+      "name": "BackupSuite (نسخ احتياطي للصورة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-26",
+      "name": "BissFeedAutoKey (مفاتيح بيس)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-27",
+      "name": "Bitrate (معدل البث)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-28",
+      "name": "Bitrate-mod-ariad (معدل البث)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-29",
+      "name": "Bundesliga-Permanent-Clock (ساعة رقمية)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-30",
+      "name": "CacheFlush (مسح الكاش)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-31",
+      "name": "Calculator-E2 (الآلة الحاسبة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-32",
+      "name": "Calendar (التقويم)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-33",
+      "name": "Cccaminfo-py2 (بيانات الـ CCCam)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-34",
+      "name": "Cccaminfo-py3 (بيانات الـ CCCam)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-35",
+      "name": "ChannelColorizer (التحكم في اختيار لون اسماء القنوات المفتوحة والمشفرة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-36",
+      "name": "ChannelLingo (مترجم القنوات الاجنبيه)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-37",
+      "name": "Ciplushelper (تشغيل الكامات الرسمية)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-38",
+      "name": "CommandCenter",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-39",
+      "name": "CrondManager (تحديد وقت للسكريبت)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-40",
+      "name": "CFG_ZOOM_FINAL (سيرفرات مجانية)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-41",
+      "name": "chocholousek-picons (تحميل البيكونات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-42",
+      "name": "CHLogoChanger (تخصيص الشعار)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-43",
+      "name": "CrashLogoViewer_1.6 (تصفح الكراشات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-44",
+      "name": "CrashLogoViewer_1.8 (تصفح الكراشات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-45",
+      "name": "CrashLogoViewer_1.9 (تصفح الكراشات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-46",
+      "name": "Custom Channel Selection-By-M-Nasr (قائمة للقنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-47",
+      "name": "CutsClear (حذف الأفلام)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-48",
+      "name": "Disk_And_CPU_Temperature (حرارة القرص الصلب)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-49",
+      "name": "DreamExplorer (تصفح الملفات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-50",
+      "name": "DreamOSatCamManager (تحميل الايميوهات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-51",
+      "name": "Easy-Cccam (إدخال CCCam)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-52",
+      "name": "E2BissKeysEditor (تعديل الشفرات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-53",
+      "name": "E2-Duplicate-Channels-Manager (مدير القنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-54",
+      "name": "Emil BootLogos (بوت لوجو)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-55",
+      "name": "Emil Channels (تحميل ملفات القنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-56",
+      "name": "EmilRemovePackage (حذف الإضافات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-57",
+      "name": "EnigmaPrayer (مواقيت الصلاة بدون انترنت)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-58",
+      "name": "enigma2readeradder (إدخال CCCam)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-59",
+      "name": "Enigma2uninstaller (حذف البلجنات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-60",
+      "name": "Epg Grabber (دليل القنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-61",
+      "name": "EPGImport (دليل القنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-62",
+      "name": "EPGImport-auto - iet5 (دليل القنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-63",
+      "name": "EPGImport-99 (دليل القنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-64",
+      "name": "EPGTranslator (مترجم دليل القنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-65",
+      "name": "EvgQuickSignal (بيان إشارة الترددات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-66",
+      "name": "Feeds-Finder (بحث الفيدات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-67",
+      "name": "Filmon",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-68",
+      "name": "Foreca1",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-69",
+      "name": "Footonsat (مواعيد مباريات الكرة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-70",
+      "name": "FreeCCcamServer (CCCam مجاني)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-71",
+      "name": "FuryBissPro (جالب الفيدات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-72",
+      "name": "GeminiPatcher",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-73",
+      "name": "gioppygio",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-74",
+      "name": "hardwareinfo (معلومات الهاردوير)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-75",
+      "name": "HisnMuslim (حصن المسلم)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-76",
+      "name": "HistoryZapSelector (تصفح آخر القنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-77",
+      "name": "horoscope (الأبراج)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-78",
+      "name": "HolidayCountdown (خاص بالأعياد)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-79",
+      "name": "ImagesDownloader - Mod Emil Nabil (تحميل الصور)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-80",
+      "name": "Internet-SpeedTest (اختبار الإنترنت)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-81",
+      "name": "Infobar Weather (انفوبار ثاني به الطقس)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-82",
+      "name": "IP_Checker (معلومات IP الإنترنت)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-83",
+      "name": "KeyAdder (مفاتيح الشفرات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-84",
+      "name": "KidsSafeBouquets (حجب القنوات الاباحية)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-85",
+      "name": "LiveFeed",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-86",
+      "name": "levi45-freeserver (CCCam مجاني)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-87",
+      "name": "levi45-free-iptv (IPTV مجاني)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-88",
+      "name": "LiveMatch (عرض نتائج الرياضة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-89",
+      "name": "levi45-settings (ملف القنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-90",
+      "name": "Mawaqit (مواقيت الصلاة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-91",
+      "name": "MenuSort (ترتيب القائمة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-92",
+      "name": "MmPicons (تحميل البيكونات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-93",
+      "name": "MyCam-Plugin (إدخال سيرفر CCCam)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-94",
+      "name": "MultiCamAdder_By-Emil (كتابة سيرفر CCCam)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-95",
+      "name": "Multi-Iptv-Adder_By-Emil (إدخال IPTV)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-96",
+      "name": "my translator_By Ismail elkhooly (مترجم)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-97",
+      "name": "Net Usage Pro (معلومات الإنترنت)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-98",
+      "name": "NewVirtualkeyBoard (كيبورد متقدم)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-99",
+      "name": "NumberZapExt (أرقام للقنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-100",
+      "name": "ONEupdater",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-101",
+      "name": "Oaweather (معلومات الطقس)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-102",
+      "name": "Ozeta-Skins-Setup (إعدادات الثيم)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-103",
+      "name": "PiconsRename (تحويل البيكونات بالاسم)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-104",
+      "name": "PluginBrowser-Grid-V2_All-Py3 (OpenBH-Vix-Pli)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-105",
+      "name": "PluginBrowser-Grid-Pli_8.3",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-106",
+      "name": "PluginMover (نقل الإضافات للخارجي)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-107",
+      "name": "PluginSkinMover (نقل الثيمات للخارجي)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-108",
+      "name": "QuadPip (متابعة أكثر من قناة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-109",
+      "name": "Quran-karem (القرآن الكريم)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-110",
+      "name": "Quran-karem_v2.2 (القرآن الكريم)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-111",
+      "name": "Quran Kareem-By-M-Nasr (القرآن الكريم)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-112",
+      "name": "QuickSignal - iet5 (بيان إشارة للقنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-113",
+      "name": "RaedQuickSignal (بيان إشارة للقنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-114",
+      "name": "ReaderManager (مدير السيرفرات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-115",
+      "name": "SaadQuranHub (تلاوات القران الكريم)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-116",
+      "name": "SatelliteTransponderUpdater (تحديث ملف الترددات اوتوماتيك)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-117",
+      "name": "SatelliWebLiveFeeds_py3.12 (فيدات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-118",
+      "name": "SatelliWebLiveFeeds_py3.13 (فيدات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-119",
+      "name": "ScreenNames (اسم الشاشة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-120",
+      "name": "Screen-Recorder-By-Emil (تسجيل الشاشة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-121",
+      "name": "ServerColoring (تلوين القنوات المشفرة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-122",
+      "name": "ServiceScanUpdates (معلومات بحث القنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-123",
+      "name": "ServiceScanUpdates - iet5 (معلومات بحث القنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-124",
+      "name": "SetPicon - modded by Emil (مدير البيكونات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-125",
+      "name": "scriptexecuter (تشغيل السكريبت)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-126",
+      "name": "ShiaVoice (اصوات قرأن وادعية)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-127",
+      "name": "showclock (ساعة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-128",
+      "name": "Sherlockmod (أضافة انفوبار 2 به معلومات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-129",
+      "name": "SignalMeterFirebase (معايرة أشارة القناة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-130",
+      "name": "SilentRunner (تشغيل سكريبتات صامت)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-131",
+      "name": "SimplyCams (شاهد كاميرات منزلك)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-132",
+      "name": "SimplySports (معلومات رياضة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-133",
+      "name": "SkyBlueBlindScan (بحث عشوائي ذكي عن الترددات والفيدات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-134",
+      "name": "SkyBlueScan (تنظيم احترافي لقوائم الاقمار والمفضلات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-135",
+      "name": "SkyBlue-Sharing (بلجن شيرنج متقدم جدا مع الصوتيات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-136",
+      "name": "SkyBlueSignalPro (بيان اشارة القنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-137",
+      "name": "SkyBlueSubtitle (الترجمة الفورية)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-138",
+      "name": "SLwebcams",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-139",
+      "name": "SuperBackupImages_by Emil Nabil (تحميل الإضافات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-140",
+      "name": "Simple-Zoom-Panel (سيرفرات مجانية)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-141",
+      "name": "Spinner-Selector-All-Python (تحميل الدوار)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-142",
+      "name": "SubExtractorLite (ترجمة الأفلام)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-143",
+      "name": "SubsSupport_1.5.8-r9 (ترجمة الأفلام)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-144",
+      "name": "SubsSupport_by-m.nasr (ترجمة الأفلام)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-145",
+      "name": "SubsSupport_2.1 (ترجمة الأفلام)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-146",
+      "name": "SubsSupportPro-By-Mohammed-Nasr (ترجمة الأفلام)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-147",
+      "name": "TMBD (خاص بالترجمة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-148",
+      "name": "Tmdb (خاص بالترجمة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-149",
+      "name": "TheWeather-iet5 (الطقس)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-150",
+      "name": "TvManager (مدير القنوات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-151",
+      "name": "uninstaller-Plugins (حذف الإضافات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-152",
+      "name": "Wireguard-Vpn",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-153",
+      "name": "Wifi-Manager (مدير الواي فاي)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-154",
+      "name": "WeatherMsn (الطقس)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-155",
+      "name": "WeatherPlugin (الطقس)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-156",
+      "name": "WorldCam (كاميرات حول العالم)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-157",
+      "name": "XmlUpdate by iet5 (تحديث الترددات)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-158",
+      "name": "xtraevent_6.890_All-Python (لوجو البرامج)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-159",
+      "name": "xtraevent_By-M-Nasr (لوجو البرامج)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-160",
+      "name": "YoureWatching (معلومات الفيلم)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-161",
+      "name": "Zip2Pkg-Converter (عمل باكاج للإضافة)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "plugins-162",
+      "name": "Zoom_1.1.2-Py3 (سيرفرات مجانية)",
+      "categoryId": "plugins",
+      "parentCategoryId": "plugins"
+    },
+    {
+      "id": "novaler-1",
+      "name": "novalerStore",
+      "categoryId": "novaler",
+      "parentCategoryId": "novaler"
+    },
+    {
+      "id": "novaler-2",
+      "name": "Airnet-Fn",
+      "categoryId": "novaler",
+      "parentCategoryId": "novaler"
+    },
+    {
+      "id": "novaler-3",
+      "name": "Beengo",
+      "categoryId": "novaler",
+      "parentCategoryId": "novaler"
+    },
+    {
+      "id": "novaler-4",
+      "name": "ipaudioplus",
+      "categoryId": "novaler",
+      "parentCategoryId": "novaler"
+    },
+    {
+      "id": "novaler-5",
+      "name": "ipsat",
+      "categoryId": "novaler",
+      "parentCategoryId": "novaler"
+    },
+    {
+      "id": "novaler-6",
+      "name": "Novaler Downloader",
+      "categoryId": "novaler",
+      "parentCategoryId": "novaler"
+    },
+    {
+      "id": "novaler-7",
+      "name": "NovaCamPro",
+      "categoryId": "novaler",
+      "parentCategoryId": "novaler"
+    },
+    {
+      "id": "novaler-8",
+      "name": "NovalerTv",
+      "categoryId": "novaler",
+      "parentCategoryId": "novaler"
+    },
+    {
+      "id": "novaler-9",
+      "name": "NovaTv",
+      "categoryId": "novaler",
+      "parentCategoryId": "novaler"
+    },
+    {
+      "id": "novaler-10",
+      "name": "SupTv",
+      "categoryId": "novaler",
+      "parentCategoryId": "novaler"
+    },
+    {
+      "id": "novaler-11",
+      "name": "Total90",
+      "categoryId": "novaler",
+      "parentCategoryId": "novaler"
+    },
+    {
+      "id": "novaler-12",
+      "name": "Ultracam",
+      "categoryId": "novaler",
+      "parentCategoryId": "novaler"
+    },
+    {
+      "id": "other_channels-1",
+      "name": "Bouquets-Ciefp_30w_Abertis",
+      "categoryId": "other_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "other_channels-2",
+      "name": "Modded By Emil Nabil",
+      "categoryId": "other_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "other_channels-3",
+      "name": "Ahmed-Mosaad Modded",
+      "categoryId": "other_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "other_channels-4",
+      "name": "Ahmed Romeh",
+      "categoryId": "other_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "other_channels-5",
+      "name": "Hazem-Wahba",
+      "categoryId": "other_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "other_channels-6",
+      "name": "Khaled Ali",
+      "categoryId": "other_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "other_channels-7",
+      "name": "Mohamed Goda",
+      "categoryId": "other_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "other_channels-8",
+      "name": "Mohamed-Nasr",
+      "categoryId": "other_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "other_channels-9",
+      "name": "Sayed Refaey",
+      "categoryId": "other_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "other_channels-10",
+      "name": "Tarek Ashry",
+      "categoryId": "other_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "other_channels-11",
+      "name": "Elsafty-Tv-Radio-Steaming",
+      "categoryId": "other_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "other_channels-12",
+      "name": "Tuner_Backup_By-Emil-Nabil",
+      "categoryId": "other_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "other_channels-13",
+      "name": "Tuner_Backup_By-M-Goda",
+      "categoryId": "other_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "ciefp_channels-1",
+      "name": "ciefp-channels-e2-75e-34w",
+      "categoryId": "ciefp_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "ciefp_channels-2",
+      "name": "1sat-19E",
+      "categoryId": "ciefp_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "ciefp_channels-3",
+      "name": "2satA-19E-13E",
+      "categoryId": "ciefp_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "ciefp_channels-4",
+      "name": "2satB-19E-16E",
+      "categoryId": "ciefp_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "ciefp_channels-5",
+      "name": "3satA-9E-10E-13E",
+      "categoryId": "ciefp_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "ciefp_channels-6",
+      "name": "3satB-19E-16E-13E",
+      "categoryId": "ciefp_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "ciefp_channels-7",
+      "name": "4satA-28E-19E-13E-30W",
+      "categoryId": "ciefp_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "ciefp_channels-8",
+      "name": "4satB-19E-16E-13E-0.8W",
+      "categoryId": "ciefp_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "ciefp_channels-9",
+      "name": "5sat-19E-16E-13E-1.9E-0.8W",
+      "categoryId": "ciefp_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "ciefp_channels-10",
+      "name": "6sat-23E-19E-16E-13E-1.9E-0.8W",
+      "categoryId": "ciefp_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "ciefp_channels-11",
+      "name": "7sat-23E-19E-16E-13E-4.8E-1.9E-0.8W",
+      "categoryId": "ciefp_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "ciefp_channels-12",
+      "name": "8sat-28E-23E-19E-16E-13E-4.8E-1.9E-0.8W",
+      "categoryId": "ciefp_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "ciefp_channels-13",
+      "name": "9sat-28E-23E-19E-16E-13E-9E-1.9E-0.8W-5W",
+      "categoryId": "ciefp_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "ciefp_channels-14",
+      "name": "10sat-39E-28E-23E-19E-16E-13E-9E-4.8E-1.9E-0.8W",
+      "categoryId": "ciefp_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "ciefp_channels-15",
+      "name": "13sat-42E-39E-28E-23E-19E-16E-13E-9E-7E-4.8E-1.9E-0.8w-5w",
+      "categoryId": "ciefp_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "ciefp_channels-16",
+      "name": "16sat-42E-39E-28E-26E-23E-19E-16E-13E-10E-9E-7E-4.8E-1.9E-0.8w-4W-5w",
+      "categoryId": "ciefp_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "ciefp_channels-17",
+      "name": "18sat-42E-39E-36E-33E-28E-26E-23E-19E-16E-13E-10E-9E-7E-4.8E-1.9E-0.8w-4w-5w",
+      "categoryId": "ciefp_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-1",
+      "name": "Morph883_0.8W-4.8E-13E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-2",
+      "name": "Morph883_0.8W-13E-19.2E-28.2E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-3",
+      "name": "Morph883_0.8W-13E-19.2E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-4",
+      "name": "Morph883_0.8W-13E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-5",
+      "name": "Morph883_4.8E-13E-19.2E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-6",
+      "name": "Morph883_4.8E-13E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-7",
+      "name": "Morph883_9E-13E-19.2E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-8",
+      "name": "Morph883_9E-13E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-9",
+      "name": "Morph883_13E-16E-19.2E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-10",
+      "name": "Morph883_13E-16E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-11",
+      "name": "Morph883_13E-19.2E-23.5E-28.2E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-12",
+      "name": "Morph883_13E-19.2E-23.5E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-13",
+      "name": "Morph883_13E-19.2E-28.2E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-14",
+      "name": "Morph883_13E-19.2E-42E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-15",
+      "name": "Morph883_13E-19.2E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-16",
+      "name": "Morph883_13E-23.5E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-17",
+      "name": "Morph883_13E-28.2E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-18",
+      "name": "Morph883_13E-42E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-19",
+      "name": "Morph883_13E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-20",
+      "name": "Morph883_30W-13E-19.2E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-21",
+      "name": "Morph883_30W-13E",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-22",
+      "name": "Morph883_Motor",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "morph883_channels-23",
+      "name": "Morph883_Settings",
+      "categoryId": "morph883_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-1",
+      "name": "Vhaninbal-Dual-13-19E",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-2",
+      "name": "Vhaninbal-Dual-DTT-Campania",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-3",
+      "name": "Vhaninbal-Dual-DTT-Italia",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-4",
+      "name": "Vhaninbal-Dual-DTT-Lazio",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-5",
+      "name": "Vhaninbal-Dual-DTT-Lombardia",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-6",
+      "name": "Vhaninbal-Dual-DTT-Piemonte",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-7",
+      "name": "Vhaninbal-HotBird-13E",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-8",
+      "name": "Vhaninbal-HotBird-DTT-Campania",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-9",
+      "name": "Vhaninbal-HotBird-DTT-Italia",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-10",
+      "name": "Vhaninbal-HotBird-DTT-Lazio",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-11",
+      "name": "Vhaninbal-HotBird-DTT-Lombardia",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-12",
+      "name": "Vhaninbal-HotBird-DTT-Piemonte",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-13",
+      "name": "Vhaninbal-Motor-70E-45W",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-14",
+      "name": "Vhaninbal-Motor-DTT-Campania",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-15",
+      "name": "Vhaninbal-Motor-DTT-Italia",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-16",
+      "name": "Vhaninbal-Motor-DTT-Lazio",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-17",
+      "name": "Vhaninbal-Motor-DTT-Lombardia",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-18",
+      "name": "Vhaninbal-Motor-DTT-Piemonte",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-19",
+      "name": "Vhaninbal-Motor-DTT-Romagna",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-20",
+      "name": "Vhaninbal-Motor-DTT-Sardegna",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-21",
+      "name": "Vhaninbal-Motor-DTT-Sicilia",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-22",
+      "name": "Vhaninbal-Quadri-9-13-16-19-23E",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-23",
+      "name": "Vhaninbal-Quadri-13-19-5E-1W",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-24",
+      "name": "Vhaninbal-Quadri-13-19-9E-5W",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-25",
+      "name": "Vhaninbal-Quadri-13-19-23-28E",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-26",
+      "name": "Vhaninbal-Trial-13-19E-5W",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "vaninbal_channels-27",
+      "name": "Vhaninbal-Trial-13-19E-30W",
+      "categoryId": "vaninbal_channels",
+      "parentCategoryId": "channels"
+    },
+    {
+      "id": "feeds-1",
+      "name": "Eliesat (فيد اضافي للصورة)",
+      "categoryId": "feeds",
+      "parentCategoryId": "feeds"
+    },
+    {
+      "id": "feeds-2",
+      "name": "Emil (فيد أضافي للصورة)",
+      "categoryId": "feeds",
+      "parentCategoryId": "feeds"
+    },
+    {
+      "id": "feeds-3",
+      "name": "Jungle (فيد أضافي للصورة)",
+      "categoryId": "feeds",
+      "parentCategoryId": "feeds"
+    },
+    {
+      "id": "feeds-4",
+      "name": "Libraries_3.12.4",
+      "categoryId": "feeds",
+      "parentCategoryId": "feeds"
+    },
+    {
+      "id": "feeds-5",
+      "name": "Libraries_3.12.6",
+      "categoryId": "feeds",
+      "parentCategoryId": "feeds"
+    },
+    {
+      "id": "feeds-6",
+      "name": "Oe-alliance-Picons (فيد به بايكونات)",
+      "categoryId": "feeds",
+      "parentCategoryId": "feeds"
+    },
+    {
+      "id": "feeds-7",
+      "name": "Oe-alliance-Settings (فيد به ملفات قنوات)",
+      "categoryId": "feeds",
+      "parentCategoryId": "feeds"
+    },
+    {
+      "id": "feeds-8",
+      "name": "Openatv-Deval (فيد صورة openatv للمطورين)",
+      "categoryId": "feeds",
+      "parentCategoryId": "feeds"
+    },
+    {
+      "id": "feeds-9",
+      "name": "OpenPicons (فيد بايكونات)",
+      "categoryId": "feeds",
+      "parentCategoryId": "feeds"
+    },
+    {
+      "id": "feeds-10",
+      "name": "Softcams-Feed-Openatv (اضافة سوفتكام لفيد الصورة)",
+      "categoryId": "feeds",
+      "parentCategoryId": "feeds"
+    },
+    {
+      "id": "feeds-11",
+      "name": "OpenDroid-softcam (اضافة سوفتكام لفيد الصورة)",
+      "categoryId": "feeds",
+      "parentCategoryId": "feeds"
+    },
+    {
+      "id": "feeds-12",
+      "name": "OpenEight-softcam (اضافة سوفتكام لفيد الصورة)",
+      "categoryId": "feeds",
+      "parentCategoryId": "feeds"
+    },
+    {
+      "id": "feeds-13",
+      "name": "TeamBlue-softcam (اضافة سوتكام لفيد الصورة)",
+      "categoryId": "feeds",
+      "parentCategoryId": "feeds"
+    },
+    {
+      "id": "feeds-14",
+      "name": "Softcams-Feed-Pure2 (اضافة سوفتكام لفيد الصورة)",
+      "categoryId": "feeds",
+      "parentCategoryId": "feeds"
+    },
+    {
+      "id": "feeds-15",
+      "name": "Tarek-Hanfy (فيد اضافي للصورة)",
+      "categoryId": "feeds",
+      "parentCategoryId": "feeds"
+    },
+    {
+      "id": "bootlogos-1",
+      "name": "BootlogoSwapper Egami (بوت لوجو متعدد)",
+      "categoryId": "bootlogos",
+      "parentCategoryId": "bootlogos"
+    },
+    {
+      "id": "bootlogos-2",
+      "name": "BootlogoSwapper Atv (بوت لوجو متعدد)",
+      "categoryId": "bootlogos",
+      "parentCategoryId": "bootlogos"
+    },
+    {
+      "id": "bootlogos-3",
+      "name": "BootlogoSwapper Pli (بوت لوجو متعدد)",
+      "categoryId": "bootlogos",
+      "parentCategoryId": "bootlogos"
+    },
+    {
+      "id": "bootlogos-4",
+      "name": "BootlogoSwapper OpenBH (بوت لوجو متعدد)",
+      "categoryId": "bootlogos",
+      "parentCategoryId": "bootlogos"
+    },
+    {
+      "id": "bootlogos-5",
+      "name": "BootlogoSwapper OpenSpa (بوت لوجو متعدد)",
+      "categoryId": "bootlogos",
+      "parentCategoryId": "bootlogos"
+    },
+    {
+      "id": "bootlogos-6",
+      "name": "BootlogoSwapper OpenVix (بوت لوجو متعدد)",
+      "categoryId": "bootlogos",
+      "parentCategoryId": "bootlogos"
+    },
+    {
+      "id": "bootlogos-7",
+      "name": "BootlogoSwapper-PURE2 (بوت لوجو متعدد)",
+      "categoryId": "bootlogos",
+      "parentCategoryId": "bootlogos"
+    },
+    {
+      "id": "bootlogos-8",
+      "name": "BootlogoSwapper Christmas (بوت لوجو متعدد)",
+      "categoryId": "bootlogos",
+      "parentCategoryId": "bootlogos"
+    },
+    {
+      "id": "bootlogos-9",
+      "name": "BootlogoSwapper Kids (بوت لوجو متعدد)",
+      "categoryId": "bootlogos",
+      "parentCategoryId": "bootlogos"
+    },
+    {
+      "id": "bootlogos-10",
+      "name": "BootlogoSwapper Ramadan (بوت لوجو متعدد)",
+      "categoryId": "bootlogos",
+      "parentCategoryId": "bootlogos"
+    },
+    {
+      "id": "bootlogos-11",
+      "name": "BootlogoSwapper Eid-Aldha (بوت لوجو متعدد)",
+      "categoryId": "bootlogos",
+      "parentCategoryId": "bootlogos"
+    },
+    {
+      "id": "bootlogos-12",
+      "name": "BootlogoSwapper V2.1 (بوت لوجو متعدد)",
+      "categoryId": "bootlogos",
+      "parentCategoryId": "bootlogos"
+    },
+    {
+      "id": "bootlogos-13",
+      "name": "BootlogoSwapper V2.3 (بوت لوجو متعدد)",
+      "categoryId": "bootlogos",
+      "parentCategoryId": "bootlogos"
+    },
+    {
+      "id": "bootlogos-14",
+      "name": "BootlogoSwapper V2.4 (بوت لوجو متعدد)",
+      "categoryId": "bootlogos",
+      "parentCategoryId": "bootlogos"
+    },
+    {
+      "id": "spinners-1",
+      "name": "Spinner-Circle",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-2",
+      "name": "Spinner-Barcelona",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-3",
+      "name": "Spinner-Bayern-Munich",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-4",
+      "name": "Spinner-Chelsea",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-5",
+      "name": "Spinner-Liverpool",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-6",
+      "name": "Spinner-MadMax",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-7",
+      "name": "Spinner-Pigeon",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-8",
+      "name": "Spinner-Pingu",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-9",
+      "name": "Spinner-TS",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-10",
+      "name": "Spinner-Revolution",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-11",
+      "name": "Spinner-Circle-Brown",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-12",
+      "name": "Spinner-Collar",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-13",
+      "name": "Spinner-Colored-Rings",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-14",
+      "name": "Spinner-Fan",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-15",
+      "name": "Spinner-kare-dugmeler",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-16",
+      "name": "Spinner-Kum-saati-kare",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-17",
+      "name": "Spinner-kupler",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-18",
+      "name": "Spinner-Number-Counter",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-19",
+      "name": "Spinner-Xdreamy",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-20",
+      "name": "Spinner-Renkli-donen-cemberler",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-21",
+      "name": "Spinner-Wheel",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-22",
+      "name": "Spinner-3d",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-23",
+      "name": "Spinner-Aglare",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-24",
+      "name": "Spinner-Dance",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-25",
+      "name": "Spinner-Dart",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-26",
+      "name": "Spinner-Echse",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-27",
+      "name": "Spinner-Girls",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-28",
+      "name": "Spinner-Girls-Dance",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-29",
+      "name": "Spinner-Jack-Sparrow",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-30",
+      "name": "Spinner-Nasht",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-31",
+      "name": "Spinner-PapaSchlumpf",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-32",
+      "name": "Spinner-presupaci-hodiny",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-33",
+      "name": "Spinner-Simba",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-34",
+      "name": "Spinner-SylvesterTweety",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-35",
+      "name": "Spinner-Vu+",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "spinners-36",
+      "name": "Spinner-Window",
+      "categoryId": "spinners",
+      "parentCategoryId": "spinners"
+    },
+    {
+      "id": "tools-1",
+      "name": "Wget (أداة تحميل مهمة)",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-2",
+      "name": "Curl (أداة تحميل مهمة)",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-3",
+      "name": "Super Script (تحميل الحزم المهمة و البلجنات والاضافات المهمة)",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-4",
+      "name": "Update Enigma2 All Python (تحميل الحزم المهمة)",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-5",
+      "name": "CheckYourReciver (تشخيص ومعلومات مهمة عن جهازك)",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-6",
+      "name": "Opkg Tools_1.4 (حزمة مهمة للصورة)",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-7",
+      "name": "Opkg Tools_1.5 (حزمة مهمة للصورة)",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-8",
+      "name": "EPG-khaled (دليل للقنوات)",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-9",
+      "name": "Free Server Cccam (سيرفرات cccam مجانية)",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-10",
+      "name": "arabic-language_for-egami-image (ملف تعريب للصورة)",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-11",
+      "name": "arabic-language_for-openatv-image (ملف تعريب للصورة)",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-12",
+      "name": "arabic-language_for-openbh-image (ملف تعريب للصورة)",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-13",
+      "name": "arabic-language_for-openhdf-image (ملف تعريب للصورة)",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-14",
+      "name": "arabic-language_for-openpli-image (ملف تعريب للصورة)",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-15",
+      "name": "arabic-language_for-openvix-image (ملف تعريب للصورة)",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-16",
+      "name": "Installer plugin from-tmp (تحميل البلجنات من tmp)",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-17",
+      "name": "Script package (تحميل حزمة السكريبتات)",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-18",
+      "name": "Delete-password",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-19",
+      "name": "Change-Password-To-root",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-20",
+      "name": "CAM-abertis-astra-sm",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-21",
+      "name": "FORMAT_HDD_TO-Ext4",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-22",
+      "name": "Repair-Inodes-From-Hdd",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-23",
+      "name": "Fix-Time-Shift-Openatv",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-24",
+      "name": "FIX-ipk-package-installation",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-25",
+      "name": "Fix-Xtraevent-Download",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-26",
+      "name": "Fix Softcam Atv",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-27",
+      "name": "Fix Softcam OpenPli",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-28",
+      "name": "Picons-Convert2Snp",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-29",
+      "name": "Feed OpenPicons",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-30",
+      "name": "Remove-Cache",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-31",
+      "name": "Set_Time_NTP-Google",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-32",
+      "name": "UpdateSatellitesOealliance",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-33",
+      "name": "UpdateSatellitesOpenPli",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-34",
+      "name": "DNS Google",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-35",
+      "name": "DNS Control",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-36",
+      "name": "DNS Cloudflare",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-37",
+      "name": "DNS CleanBrowsing",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-38",
+      "name": "DNS Quad9",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-39",
+      "name": "DNS Open-Home",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-40",
+      "name": "DNS Comodo",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-41",
+      "name": "DNS Alternate",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-42",
+      "name": "DNS AdGuard",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "tools-43",
+      "name": "Zip2ipk",
+      "categoryId": "tools",
+      "parentCategoryId": "tools"
+    },
+    {
+      "id": "system-1",
+      "name": "AutomaticVolumeAdjustment-ALL Python",
+      "categoryId": "system",
+      "parentCategoryId": "system"
+    },
+    {
+      "id": "system-2",
+      "name": "3gmodemmanager-ALL Python",
+      "categoryId": "system",
+      "parentCategoryId": "system"
+    },
+    {
+      "id": "system-3",
+      "name": "Disk_and_CPU_Temperature",
+      "categoryId": "system",
+      "parentCategoryId": "system"
+    },
+    {
+      "id": "system-4",
+      "name": "devicemanager-All Python",
+      "categoryId": "system",
+      "parentCategoryId": "system"
+    },
+    {
+      "id": "system-5",
+      "name": "extnumberzap",
+      "categoryId": "system",
+      "parentCategoryId": "system"
+    },
+    {
+      "id": "system-6",
+      "name": "mountmanager-All Python",
+      "categoryId": "system",
+      "parentCategoryId": "system"
+    },
+    {
+      "id": "system-7",
+      "name": "Setpasswd-ALL Python",
+      "categoryId": "system",
+      "parentCategoryId": "system"
+    },
+    {
+      "id": "system-8",
+      "name": "Signalfinder-ALL Python",
+      "categoryId": "system",
+      "parentCategoryId": "system"
+    },
+    {
+      "id": "system-9",
+      "name": "SoftwareManager-ALL Python",
+      "categoryId": "system",
+      "parentCategoryId": "system"
+    },
+    {
+      "id": "system-10",
+      "name": "Ts-SatEditor-ALL Python",
+      "categoryId": "system",
+      "parentCategoryId": "system"
+    },
+    {
+      "id": "system-11",
+      "name": "Xmlupdate-ALL Python",
+      "categoryId": "system",
+      "parentCategoryId": "system"
+    },
+    {
+      "id": "media-1",
+      "name": "ArabicPlayer (تشغيل ال iptv)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-2",
+      "name": "Alkuds-IpAudio (أضافة صوتيات علي قنوات السات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-3",
+      "name": "AudioMerge (دمح صوتيات قناتين)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-4",
+      "name": "AudioShift (أضافة صوتيات علي قنوات السات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-5",
+      "name": "AudioSelectionPatcher-By-M-Nasr (صوتيات فوكس مع تايم شفت)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-6",
+      "name": "BouquetMakerXtream (تحويل iptv الي المفضلات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-7",
+      "name": "CustomIptvArchiveMakerpro (أضافة اشتراكات iptv)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-8",
+      "name": "E2-Tube (يوتيوب)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-9",
+      "name": "E2m3ubouquet (تحويل iptv m3u الي المفضلات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-10",
+      "name": "E2Player_BlackMirror (برنامج مشاهدة)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-11",
+      "name": "E2Player-Angel_Heart (برنامج مشاهدة)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-12",
+      "name": "E2IplayerUpdater-Angel_Heart (تحديث السبرفرات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-13",
+      "name": "E2Player-Biko (برنامج مشاهدة)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-14",
+      "name": "E2Player-MAXBAMBY (برنامج مشاهدة)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-15",
+      "name": "E2Player-ZADMARIO (برنامج مشاهدة)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-16",
+      "name": "Estalker (مشغل بورتلات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-17",
+      "name": "EstalkerWebControl (التحكم في اضافة بورتلات والحذف)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-18",
+      "name": "Filmxy",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-19",
+      "name": "Freearhey",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-20",
+      "name": "GT IPTV Player Pro (مشغل اكستريم iptv و بورتلات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-21",
+      "name": "HasBahCa (iptv مجاني)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-22",
+      "name": "Ip2sat-By-Mosaad (مشاهدة iptv علي قنوات السات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-23",
+      "name": "IpAudio 6.7 (py2) (مشغل صوتيات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-24",
+      "name": "IpAudio 7.4 (py3) (مشغل صوتيات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-25",
+      "name": "IpAudio 8.02 By-M-Nasr (All python) ( مشغل صوتيات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-26",
+      "name": "IpAudio By-M-Nasr (Py3) (مشغل صوتيات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-27",
+      "name": "IpAudioPro_1.5 (مشغل صوتيات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-28",
+      "name": "IpAudioPro Latest Version (مشغل صوتيات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-29",
+      "name": "IpStreamer By-M-Nasr (Py3) (مشغل صوتيات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-30",
+      "name": "Iptosat_v1.8 (مشاهدة iptv علي قنوات السات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-31",
+      "name": "Iptosat_v1.9-Modded-by-Emil (مشاهدة iptv علي قنوات السات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-32",
+      "name": "Iptv-Org-Playlists",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-33",
+      "name": "iptvdream (مشغل m3u)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-34",
+      "name": "IptvPlayer (مشغل ،iptv)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-35",
+      "name": "JediEpgExtream (نقل الدليل الي ال iptv)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-36",
+      "name": "jedimakerxtream (تحويل ال iptv الي مفضلات السات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-37",
+      "name": "m3uconverter (تحويل m3u الي مفضلات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-38",
+      "name": "Moviebrowser",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-39",
+      "name": "MoviesManager (مدير افلام)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-40",
+      "name": "MultiStalkerPro (مشغل بورتلات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-41",
+      "name": "multistalker (مشغل بورتلات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-42",
+      "name": "MyStreamer (برنامج مشاهدة اونلاين)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-43",
+      "name": "MyHits-By-M-Nasr (مشغل اغاني)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-44",
+      "name": "OrangeAudioPlugin-By-M-Nasr (اضافة صوتيات اورانج و فاميلي)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-45",
+      "name": "Plutotv",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-46",
+      "name": "Quarter pounder (تنشيط قنوات ال iptv)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-47",
+      "name": "Radio-80-s (راديو)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-48",
+      "name": "Radio-Stream-Relay (راديو و استريم)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-49",
+      "name": "RadioGit (ستريم محطات راديو)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-50",
+      "name": "Radiom (ستريم محطات راديو)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-51",
+      "name": "Rakutentv",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-52",
+      "name": "SamsungTvPlus (iptv مجاني)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-53",
+      "name": "ScSearch (مشاهدة الافلام)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-54",
+      "name": "StalkerPortalConverter (تحويل بورتلات لمفضلات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-55",
+      "name": "Suptv",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-56",
+      "name": "Timeshift Delay (تايم شفت)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-57",
+      "name": "TiviMateE2 (مشغل اشتراكات iptv)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-58",
+      "name": "Transmission_E2 (iptv مجاني)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-59",
+      "name": "TvDream",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-60",
+      "name": "TvGarden (iptv مجاني)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-61",
+      "name": "TvParsa",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-62",
+      "name": "TvRaiPreview",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-63",
+      "name": "vavoo",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-64",
+      "name": "UltraAudio (مشغل صوتيات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-65",
+      "name": "Xc_Plugin_Forever (مشغل iptv)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-66",
+      "name": "Xklass-iptv (مشغل iptv)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-67",
+      "name": "XPortal (مشغل iptv)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-68",
+      "name": "Xstreamity (مشغل iptv)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-69",
+      "name": "XtreamNew (مشغل اكستريم iptv و بورتلات)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-70",
+      "name": "Xtream2Audio-By-Emil (أضافة صوتيات من iptv)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "media-71",
+      "name": "Youtube (مشاهدة اليوتيوب)",
+      "categoryId": "media",
+      "parentCategoryId": "media"
+    },
+    {
+      "id": "ciefp-1",
+      "name": "CiefpBootlogo",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-2",
+      "name": "CiefpBouquetUpdater",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-3",
+      "name": "CiefpChannelManager",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-4",
+      "name": "CiefpE2Converter",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-5",
+      "name": "CiefpE2editor",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-6",
+      "name": "CiefpEasySetup",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-7",
+      "name": "CiefpEPGshare",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-8",
+      "name": "CiefpIPTVBouquets",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-9",
+      "name": "CiefpKingSat",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-10",
+      "name": "CiefpMojTvEPG",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-11",
+      "name": "CiefpOpenDirectories",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-12",
+      "name": "CiefpOpenSubtitles",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-13",
+      "name": "CiefpOscamEditor",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-14",
+      "name": "CiefpParabolaCZ",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-15",
+      "name": "CiefpPiconManager",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-16",
+      "name": "CiefpPicturePlayer",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-17",
+      "name": "CiefpPlugins",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-18",
+      "name": "CiefpRottenTomatoes",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-19",
+      "name": "CiefpSatelliteAnalyzer",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-20",
+      "name": "CiefpSatellitesXmlEditor",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-21",
+      "name": "CiefpScreenGrab",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-22",
+      "name": "CiefpSelectSatellite",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-23",
+      "name": "CiefpSettingsDownloader",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-24",
+      "name": "CiefpSettingsPanel",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-25",
+      "name": "CiefpSettingsStreamrelay PY2",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-26",
+      "name": "CiefpSettingsStreamrelay PY3",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-27",
+      "name": "CiefpSettingsT2miAbertis",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-28",
+      "name": "CiefpSettingsT2miAbertisOpenPLi",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-29",
+      "name": "CiefpsettingsMotor",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-30",
+      "name": "CiefpTMDBSearch",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-31",
+      "name": "CiefpTvProgram",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-32",
+      "name": "CiefpTvProgramA1HR",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-33",
+      "name": "CiefpTvProgramSBB",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-34",
+      "name": "CiefpTvProgramSK",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-35",
+      "name": "CiefpTvTodayDE",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-36",
+      "name": "CiefpVibes",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-37",
+      "name": "CiefpVideoPlayer",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-38",
+      "name": "CiefpWhitelistStreamrelay",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-39",
+      "name": "CiefpYouTube",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-40",
+      "name": "TitloviBrowser",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "ciefp-41",
+      "name": "WebCamE2PrenjSF",
+      "categoryId": "ciefp",
+      "parentCategoryId": "ciefp"
+    },
+    {
+      "id": "multiboot-1",
+      "name": "EgamiBoot 10.5",
+      "categoryId": "multiboot",
+      "parentCategoryId": "multiboot"
+    },
+    {
+      "id": "multiboot-2",
+      "name": "EgamiBoot 10.6",
+      "categoryId": "multiboot",
+      "parentCategoryId": "multiboot"
+    },
+    {
+      "id": "multiboot-3",
+      "name": "Neoboot 10.0 VIP-Mod-Eslam",
+      "categoryId": "multiboot",
+      "parentCategoryId": "multiboot"
+    },
+    {
+      "id": "multiboot-4",
+      "name": "Neoboot 9.65 VIP",
+      "categoryId": "multiboot",
+      "parentCategoryId": "multiboot"
+    },
+    {
+      "id": "multiboot-5",
+      "name": "Neoboot 9.65 Mod-ElSafty VIP",
+      "categoryId": "multiboot",
+      "parentCategoryId": "multiboot"
+    },
+    {
+      "id": "multiboot-6",
+      "name": "Neoboot 9.60 VIP",
+      "categoryId": "multiboot",
+      "parentCategoryId": "multiboot"
+    },
+    {
+      "id": "multiboot-7",
+      "name": "Neoboot 9.58 VIP",
+      "categoryId": "multiboot",
+      "parentCategoryId": "multiboot"
+    },
+    {
+      "id": "multiboot-8",
+      "name": "Neoboot 9.54 VIP",
+      "categoryId": "multiboot",
+      "parentCategoryId": "multiboot"
+    },
+    {
+      "id": "multiboot-9",
+      "name": "OpenMultiboot 1.3",
+      "categoryId": "multiboot",
+      "parentCategoryId": "multiboot"
+    },
+    {
+      "id": "multiboot-10",
+      "name": "OpenMultiboot-E2turk",
+      "categoryId": "multiboot",
+      "parentCategoryId": "multiboot"
+    },
+    {
+      "id": "multiboot-11",
+      "name": "Multiboot-FlashOnline",
+      "categoryId": "multiboot",
+      "parentCategoryId": "multiboot"
+    },
+    {
+      "id": "softcams-1",
+      "name": "Cccam",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-2",
+      "name": "gosatplus-ncam",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-3",
+      "name": "gosatplus-oscam",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-4",
+      "name": "gosatplus_v3_arm",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-5",
+      "name": "gosatplus_v3_mips",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-6",
+      "name": "gosatplus_v3_Fix",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-7",
+      "name": "Hold-flag-ncam",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-8",
+      "name": "Hold-flag-Oscam",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-9",
+      "name": "Ncam_v15.7",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-10",
+      "name": "Ncam_v15.8",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-11",
+      "name": "Oscam_By-Mohamed-Os",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-12",
+      "name": "Oscam-11.726-By-lenuxsat",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-13",
+      "name": "Oscam By Levi45",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-14",
+      "name": "oscamicam",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-15",
+      "name": "powercam_v2-icam-arm",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-16",
+      "name": "powercam-Ncam",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-17",
+      "name": "powercam-Oscam",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-18",
+      "name": "Restore-flag-ncam",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-19",
+      "name": "Restore-flag-oscam",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-20",
+      "name": "Revcam-Ncam",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-21",
+      "name": "Revcam-Oscam",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-22",
+      "name": "Revcam",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-23",
+      "name": "Supcam-Ncam",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-24",
+      "name": "Supcam-Oscam",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-25",
+      "name": "Ultracam-Ncam",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-26",
+      "name": "Ultracam-Oscam",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "softcams-27",
+      "name": "Ultracam",
+      "categoryId": "softcams",
+      "parentCategoryId": "softcams"
+    },
+    {
+      "id": "backup-1",
+      "name": "Backup-my-Channels",
+      "categoryId": "backup",
+      "parentCategoryId": "backup"
+    },
+    {
+      "id": "backup-2",
+      "name": "Full-Backup-Image",
+      "categoryId": "backup",
+      "parentCategoryId": "backup"
+    },
+    {
+      "id": "backup-3",
+      "name": "Backup-hotkey",
+      "categoryId": "backup",
+      "parentCategoryId": "backup"
+    },
+    {
+      "id": "backup-4",
+      "name": "Backup-network",
+      "categoryId": "backup",
+      "parentCategoryId": "backup"
+    },
+    {
+      "id": "backup-5",
+      "name": "Backup-softcams",
+      "categoryId": "backup",
+      "parentCategoryId": "backup"
+    },
+    {
+      "id": "backup-6",
+      "name": "Backup-tuner",
+      "categoryId": "backup",
+      "parentCategoryId": "backup"
+    },
+    {
+      "id": "backup-7",
+      "name": "Backup-my-bouquetmakerxtream",
+      "categoryId": "backup",
+      "parentCategoryId": "backup"
+    },
+    {
+      "id": "backup-8",
+      "name": "Backup-my-ip2sat-server",
+      "categoryId": "backup",
+      "parentCategoryId": "backup"
+    },
+    {
+      "id": "backup-9",
+      "name": "Backup-my-ipaudio-server",
+      "categoryId": "backup",
+      "parentCategoryId": "backup"
+    },
+    {
+      "id": "backup-10",
+      "name": "Backup-my-ipaudiopro-server",
+      "categoryId": "backup",
+      "parentCategoryId": "backup"
+    },
+    {
+      "id": "backup-11",
+      "name": "Backup-my-jediplaylists",
+      "categoryId": "backup",
+      "parentCategoryId": "backup"
+    },
+    {
+      "id": "backup-12",
+      "name": "Backup-my-multistalkerpro",
+      "categoryId": "backup",
+      "parentCategoryId": "backup"
+    },
+    {
+      "id": "backup-13",
+      "name": "Backup-my-Subtitle-Setting",
+      "categoryId": "backup",
+      "parentCategoryId": "backup"
+    },
+    {
+      "id": "backup-14",
+      "name": "Backup-my-xstreamity-servers",
+      "categoryId": "backup",
+      "parentCategoryId": "backup"
+    },
+    {
+      "id": "backup-15",
+      "name": "Backup-sittings-xtraevent",
+      "categoryId": "backup",
+      "parentCategoryId": "backup"
+    },
+    {
+      "id": "restore-1",
+      "name": "Restore-my-Channels",
+      "categoryId": "restore",
+      "parentCategoryId": "restore"
+    },
+    {
+      "id": "restore-2",
+      "name": "Restore-hotkey",
+      "categoryId": "restore",
+      "parentCategoryId": "restore"
+    },
+    {
+      "id": "restore-3",
+      "name": "Restore-network",
+      "categoryId": "restore",
+      "parentCategoryId": "restore"
+    },
+    {
+      "id": "restore-4",
+      "name": "Restore-softcams",
+      "categoryId": "restore",
+      "parentCategoryId": "restore"
+    },
+    {
+      "id": "restore-5",
+      "name": "Restore-tuner",
+      "categoryId": "restore",
+      "parentCategoryId": "restore"
+    },
+    {
+      "id": "restore-6",
+      "name": "Restore-my-bouquetmakerxtream",
+      "categoryId": "restore",
+      "parentCategoryId": "restore"
+    },
+    {
+      "id": "restore-7",
+      "name": "Restore-my-ip2sat-server",
+      "categoryId": "restore",
+      "parentCategoryId": "restore"
+    },
+    {
+      "id": "restore-8",
+      "name": "Restore-my-ipaudio-server",
+      "categoryId": "restore",
+      "parentCategoryId": "restore"
+    },
+    {
+      "id": "restore-9",
+      "name": "Restore-my-ipaudiopro-server",
+      "categoryId": "restore",
+      "parentCategoryId": "restore"
+    },
+    {
+      "id": "restore-10",
+      "name": "Restore-my-jediplaylists",
+      "categoryId": "restore",
+      "parentCategoryId": "restore"
+    },
+    {
+      "id": "restore-11",
+      "name": "Restore-my-multistalkerpro",
+      "categoryId": "restore",
+      "parentCategoryId": "restore"
+    },
+    {
+      "id": "restore-12",
+      "name": "Restore-My-Subtitle-Setting",
+      "categoryId": "restore",
+      "parentCategoryId": "restore"
+    },
+    {
+      "id": "restore-13",
+      "name": "Restore-my-xstreamity-servers",
+      "categoryId": "restore",
+      "parentCategoryId": "restore"
+    },
+    {
+      "id": "restore-14",
+      "name": "Restore-sittings-xtraevent",
+      "categoryId": "restore",
+      "parentCategoryId": "restore"
+    },
+    {
+      "id": "openatv_skins-1",
+      "name": "Aglare-FHD",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-2",
+      "name": "Areadeltasat_fhd",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-3",
+      "name": "Barby-Black-py3-FHD",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-4",
+      "name": "Barby-Green-py3-FHD",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-5",
+      "name": "Barby-purple-py3-FHD",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-6",
+      "name": "Barby-py3-FHD",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-7",
+      "name": "BLACKNEON-XP-FHD-V2_ArabicDiscription",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-8",
+      "name": "CineView-FHD",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-9",
+      "name": "Fury-FHD",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-10",
+      "name": "Gradient-fhd",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-11",
+      "name": "Maxy-FHD",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-12",
+      "name": "Mohammed Skin",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-13",
+      "name": "Full HD Glass17",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-14",
+      "name": "MyMetrixLiteBackup",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-15",
+      "name": "MetrixFHD-Extraevent-PosterXD",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-16",
+      "name": "MetrixPoster-By_MNASR",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-17",
+      "name": "malek-fhd",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-18",
+      "name": "Nacht_1.7.3",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-19",
+      "name": "Nacht_7.1",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-20",
+      "name": "Obsidian-FHD",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-21",
+      "name": "Op-Artkoala-FHD",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-22",
+      "name": "Ozeta-Xtra",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-23",
+      "name": "Premium-Magenta-Fhd",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-24",
+      "name": "Premium-Black-Fhd",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-25",
+      "name": "Premium-Blue-Fhd",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-26",
+      "name": "Sky Blue Team-FHD",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openatv_skins-27",
+      "name": "XDreamy-FHD",
+      "categoryId": "openatv_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "teamnitro_skins-1",
+      "name": "TeamNitro Control",
+      "categoryId": "teamnitro_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "teamnitro_skins-2",
+      "name": "AlAyam-FHD",
+      "categoryId": "teamnitro_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "teamnitro_skins-3",
+      "name": "Desert-FHD",
+      "categoryId": "teamnitro_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "teamnitro_skins-4",
+      "name": "BoHLALA-FHD",
+      "categoryId": "teamnitro_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "teamnitro_skins-5",
+      "name": "Dragon-FHD",
+      "categoryId": "teamnitro_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "teamnitro_skins-6",
+      "name": "NitroAdvance-FHD",
+      "categoryId": "teamnitro_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "teamnitro_skins-7",
+      "name": "Klll-Pro-FHD",
+      "categoryId": "teamnitro_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-1",
+      "name": "Aglare-fhd",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-2",
+      "name": "BlackShadow_X2P_OBH",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-3",
+      "name": "CineView-FHD",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-4",
+      "name": "EclipseFHD_OBH",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-5",
+      "name": "EclipseFire_OBH",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-6",
+      "name": "Fury-FHD",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-7",
+      "name": "MX_BlackSea",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-8",
+      "name": "MX-Sline-Black-Red-Gradient",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-9",
+      "name": "MX_GrayDots_X2B_OBH",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-10",
+      "name": "MX_GreenDots_OBH",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-11",
+      "name": "MX_HQ7_OBH",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-12",
+      "name": "MX_Maestra_Black_OBH",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-13",
+      "name": "MX_Maestra2b_weather",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-14",
+      "name": "MX_Sline-Blue",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-15",
+      "name": "Mx-Sline-Glass-Gradient",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-16",
+      "name": "MX_Sline-Red_X2",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-17",
+      "name": "OpenBhGreenFHD",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-18",
+      "name": "Waves4_Fire_weather_OBH",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-19",
+      "name": "Waves4_weather_OBH",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-20",
+      "name": "XDreamy-FHD",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openbh_skins-21",
+      "name": "Youchie-OBH-FHD",
+      "categoryId": "openbh_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "egami_skins-1",
+      "name": "Aglare-FHD",
+      "categoryId": "egami_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "egami_skins-2",
+      "name": "CineView-FHD",
+      "categoryId": "egami_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "egami_skins-3",
+      "name": "Fury-FHD",
+      "categoryId": "egami_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "egami_skins-4",
+      "name": "Premium-Magenta-Fhd",
+      "categoryId": "egami_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "egami_skins-5",
+      "name": "Premium-Black-Fhd",
+      "categoryId": "egami_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "egami_skins-6",
+      "name": "Premium-Blue-Fhd",
+      "categoryId": "egami_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "egami_skins-7",
+      "name": "XDreamy-FHD",
+      "categoryId": "egami_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openpli_py3_skins-1",
+      "name": "Aglare-FHD",
+      "categoryId": "openpli_py3_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openpli_py3_skins-2",
+      "name": "BARDO-FHD",
+      "categoryId": "openpli_py3_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openpli_py3_skins-3",
+      "name": "BLACKNEON-XP_Mod_M-Nasr",
+      "categoryId": "openpli_py3_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openpli_py3_skins-4",
+      "name": "CineView-FHD",
+      "categoryId": "openpli_py3_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openpli_py3_skins-5",
+      "name": "malek-fhd",
+      "categoryId": "openpli_py3_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openpli_py3_skins-6",
+      "name": "Ozeta-Xtra",
+      "categoryId": "openpli_py3_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openpli_py3_skins-7",
+      "name": "XDreamy-FHD",
+      "categoryId": "openpli_py3_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openpli_py3_skins-8",
+      "name": "Youchie-PLI-FHD",
+      "categoryId": "openpli_py3_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openspa_skins-1",
+      "name": "Aglare-FHD",
+      "categoryId": "openspa_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openspa_skins-2",
+      "name": "Fury-FHD",
+      "categoryId": "openspa_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openspa_skins-3",
+      "name": "estuary-1080-FHD",
+      "categoryId": "openspa_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openspa_skins-4",
+      "name": "Skyline",
+      "categoryId": "openspa_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openvix_skins-1",
+      "name": "Aglare-FHD",
+      "categoryId": "openvix_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openvix_skins-2",
+      "name": "CineView-FHD",
+      "categoryId": "openvix_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openvix_skins-3",
+      "name": "E2-darkos-FHD",
+      "categoryId": "openvix_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openvix_skins-4",
+      "name": "Fury-FHD",
+      "categoryId": "openvix_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openvix_skins-5",
+      "name": "Magic-FHD",
+      "categoryId": "openvix_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openvix_skins-6",
+      "name": "Vixbmc-1080-Confluence-FHD",
+      "categoryId": "openvix_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openvix_skins-7",
+      "name": "XDreamy-FHD",
+      "categoryId": "openvix_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openvix_skins-8",
+      "name": "Youchie-OpenVix-FHD",
+      "categoryId": "openvix_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openpli_py2_skins-1",
+      "name": "Bluemetal-FHD",
+      "categoryId": "openpli_py2_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openpli_py2_skins-2",
+      "name": "CH.LEAGUE-FHD",
+      "categoryId": "openpli_py2_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openpli_py2_skins-3",
+      "name": "Maxy-FHD",
+      "categoryId": "openpli_py2_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openpli_py2_skins-4",
+      "name": "Ozeta-Xtra",
+      "categoryId": "openpli_py2_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openpli_py2_skins-5",
+      "name": "QATAR-2022-V3-FHD",
+      "categoryId": "openpli_py2_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openpli_py2_skins-6",
+      "name": "SPIDERMAN-FHD",
+      "categoryId": "openpli_py2_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openpli_py2_skins-7",
+      "name": "WAR-S-FHD",
+      "categoryId": "openpli_py2_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openpli_py2_skins-8",
+      "name": "BLACKSKY-S-HD",
+      "categoryId": "openpli_py2_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openpli_py2_skins-9",
+      "name": "BATMAN-MP-HD",
+      "categoryId": "openpli_py2_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "openpli_py2_skins-10",
+      "name": "TOKYO2020-FHD",
+      "categoryId": "openpli_py2_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "pure2_skins-1",
+      "name": "Aglare-FHD",
+      "categoryId": "pure2_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "pure2_skins-2",
+      "name": "CineView-FHD",
+      "categoryId": "pure2_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "pure2_skins-3",
+      "name": "Fury-FHD",
+      "categoryId": "pure2_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "pure2_skins-4",
+      "name": "Premium-Magenta-Fhd",
+      "categoryId": "pure2_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "pure2_skins-5",
+      "name": "Premium-Black-Fhd",
+      "categoryId": "pure2_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "pure2_skins-6",
+      "name": "Premium-Blue-Fhd",
+      "categoryId": "pure2_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "pure2_skins-7",
+      "name": "XDreamy-FHD",
+      "categoryId": "pure2_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "display_skins-1",
+      "name": "display-oe-a-lcdskin-1",
+      "categoryId": "display_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "display_skins-2",
+      "name": "display-oe-a-lcdskin-2",
+      "categoryId": "display_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "display_skins-3",
+      "name": "display-oe-a-lcdskin-3",
+      "categoryId": "display_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "display_skins-4",
+      "name": "display-oe-a-lcdskin-4",
+      "categoryId": "display_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "display_skins-5",
+      "name": "display-oe-a-lcdskin-5",
+      "categoryId": "display_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "display_skins-6",
+      "name": "display-oe-a-lcdskin-6",
+      "categoryId": "display_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "display_skins-7",
+      "name": "display-oe-a-lcdskin-7",
+      "categoryId": "display_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "display_skins-8",
+      "name": "display-oe-a-lcdskin-8",
+      "categoryId": "display_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "display_skins-9",
+      "name": "display-oe-a-lcdskin-9",
+      "categoryId": "display_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "display_skins-10",
+      "name": "display-oe-a-lcdskin-10",
+      "categoryId": "display_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "display_skins-11",
+      "name": "display-oe-a-lcdskin-11",
+      "categoryId": "display_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "display_skins-12",
+      "name": "display-oe-a-lcdskin-12",
+      "categoryId": "display_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "display_skins-13",
+      "name": "display-oe-a-lcdskin-13",
+      "categoryId": "display_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "plugin-xtreamity_skins-1",
+      "name": "Abstract",
+      "categoryId": "plugin-xtreamity_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "plugin-xtreamity_skins-2",
+      "name": "qatar2022",
+      "categoryId": "plugin-xtreamity_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "plugin-xtreamity_skins-3",
+      "name": "Toys",
+      "categoryId": "plugin-xtreamity_skins",
+      "parentCategoryId": "skins"
+    },
+    {
+      "id": "images-1",
+      "name": "BlackHole 3.1.0",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-2",
+      "name": "Egami 10.4",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-3",
+      "name": "OpenATV 6.4",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-4",
+      "name": "OpenATV 7.0",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-5",
+      "name": "OpenATV 7.1",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-6",
+      "name": "OpenATV 7.2",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-7",
+      "name": "OpenATV 7.3",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-8",
+      "name": "OpenATV 7.4",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-9",
+      "name": "OpenATV 7.5",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-10",
+      "name": "OpenATV 7.5.1",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-11",
+      "name": "OpenATV 7.6",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-12",
+      "name": "OpenATV 8.0",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-13",
+      "name": "OpenBlackHole 4.4",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-14",
+      "name": "OpenBlackHole 5.0",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-15",
+      "name": "OpenBlackHole 5.1",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-16",
+      "name": "OpenBlackHole 5.2",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-17",
+      "name": "OpenBlackHole 5.3",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-18",
+      "name": "OpenBlackHole 5.4",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-19",
+      "name": "OpenBlackHole 5.5.1",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-20",
+      "name": "OpenBlackHole 5.6",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-21",
+      "name": "OpenBlackHole 6.0",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-22",
+      "name": "OpenDroid",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-23",
+      "name": "OpenPLi 7.3",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-24",
+      "name": "OpenPLi 8.3",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-25",
+      "name": "OpenPLi 8.3 Time Shift",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-26",
+      "name": "OpenPLi 9.0 Time Shift",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-27",
+      "name": "OpenPLi 9.0",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-28",
+      "name": "OpenPLi 9.1",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-29",
+      "name": "OpenPLi 9.2",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-30",
+      "name": "OpenSpa 7.5",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-31",
+      "name": "OpenSpa 8.0",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-32",
+      "name": "OpenSpa 8.1",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-33",
+      "name": "OpenSpa 8.3",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-34",
+      "name": "OpenSpa 8.4",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-35",
+      "name": "OpenSpa 8.5",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-36",
+      "name": "OpenVIX 6.6.004",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-37",
+      "name": "OpenVIX Latest Version",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-38",
+      "name": "OpenVision py2 10.3 r395",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-39",
+      "name": "Pure2 7.4",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-40",
+      "name": "Pure2 7.6",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "images-41",
+      "name": "VTI 15.0.02",
+      "categoryId": "images",
+      "parentCategoryId": "images"
+    },
+    {
+      "id": "picons-1",
+      "name": "Intelsat 31.5W",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-2",
+      "name": "Hispasat 30.0W",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-3",
+      "name": "Intelsat 27.5W",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-4",
+      "name": "Intelsat 24.5W",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-5",
+      "name": "SES 4 22.0W",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-6",
+      "name": "NSS 7 20.0W",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-7",
+      "name": "Telstar 15.0W",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-8",
+      "name": "Express 14W",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-9",
+      "name": "Express 11.0W-14.0W",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-10",
+      "name": "Nilesat 7W-8W",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-11",
+      "name": "Eutelsat 5.0W",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-12",
+      "name": "Amos 4.0W",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-13",
+      "name": "ABS 3.0W",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-14",
+      "name": "Thor 0.8W",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-15",
+      "name": "BulgariaSat 1.9E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-16",
+      "name": "Eutelsat 3.0E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-17",
+      "name": "Astra 4.8E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-18",
+      "name": "Eutelsat 7.0E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-19",
+      "name": "Eutelsat 9.0E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-20",
+      "name": "Eutelsat 10.0E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-21",
+      "name": "Hotbird 13.0E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-22",
+      "name": "Eutelsat 16.0E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-23",
+      "name": "Astra 19.2E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-24",
+      "name": "Eutelsat 21.6E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-25",
+      "name": "Astra 23.5E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-26",
+      "name": "Eshail 25.5E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-27",
+      "name": "Badr 26.0E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-28",
+      "name": "Astra 28.2E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-29",
+      "name": "Arabsat 30.5E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-30",
+      "name": "Astra 31.5E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-31",
+      "name": "Intelsat 33.0E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-32",
+      "name": "Eutelsat 36.0E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-33",
+      "name": "Hellas-Sat 39.0E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-34",
+      "name": "Turksat 42.0E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-35",
+      "name": "AzerSpace 45.0E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-36",
+      "name": "AzerSpace 46.0E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-37",
+      "name": "Turksat 50.0E-57E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-38",
+      "name": "Belintersat 51.5E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-39",
+      "name": "TurkmenAlem 52.0E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-40",
+      "name": "Yahsat 52.5E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-41",
+      "name": "Express 53.0E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-42",
+      "name": "Yamal 54.9E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-43",
+      "name": "Intelsat 60.0E-68.0E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-44",
+      "name": "Intelsat 62.0E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-45",
+      "name": "Eutelsat 70.0E-75.0E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-46",
+      "name": "Intelsat 72.1E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-47",
+      "name": "ABS 75.0E",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-48",
+      "name": "Picons Other",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "picons-49",
+      "name": "Chocholousek Picons",
+      "categoryId": "picons",
+      "parentCategoryId": "picons"
+    },
+    {
+      "id": "remove-1",
+      "name": "Remove all_Crashlogs",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-2",
+      "name": "Remove-Ajpanel",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-3",
+      "name": "Remove BouquetMakerXtream",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-4",
+      "name": "Remove Feed-Dreamarapia",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-5",
+      "name": "Remove Feed-geminilocale",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-6",
+      "name": "Remove all Neoboot",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-7",
+      "name": "Remove Oscam_Supcam",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-8",
+      "name": "Remove CCcamFinder",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-9",
+      "name": "Remove-Channels",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-10",
+      "name": "Remove-E2iplayer",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-11",
+      "name": "Remove-Emu-All",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-12",
+      "name": "Remove-Emu-Ncam",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-13",
+      "name": "Remove-Emu-Oscam",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-14",
+      "name": "Remove-Emus-Config-Files",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-15",
+      "name": "Remove-Jedimaker-playlists",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-16",
+      "name": "Remove-Plugin-mediaplayer2",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-17",
+      "name": "Remove-Plugin-NetSpeedTest",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-18",
+      "name": "Remove-Plugin-OscamFinder",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-19",
+      "name": "Remove-Plugin-alternativesoftcammanager",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-20",
+      "name": "Remove-Plugin-Plugin-FreeServer",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-21",
+      "name": "Remove-Plugin-levi45-addonsmanager",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-22",
+      "name": "Remove-Plugin-m3u-converter",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-23",
+      "name": "Remove-Plugin-SatVenusPANEL",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-24",
+      "name": "Remove-Plugin-tvpanel",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-25",
+      "name": "Remove-Plugin-XCplugin",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-26",
+      "name": "Remove-Plugin-Xstreamity",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-27",
+      "name": "Remove-Plugin-youtube",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-28",
+      "name": "Remove-Plugin-SoftCam_Manager",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-29",
+      "name": "Remove-Plugin-Subssupport",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-30",
+      "name": "Remove-Plugin-Tvpanel",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-31",
+      "name": "Remove-Tuner-Settings",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    },
+    {
+      "id": "remove-32",
+      "name": "Remove-Xstreamity-playlists",
+      "categoryId": "remove",
+      "parentCategoryId": "remove"
+    }
+  ]
+}

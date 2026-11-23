@@ -1,6 +1,6 @@
 # Manus IPK
 
-صفحة هبوط عربية RTL لمشروع Manus IPK المرتبط بإضافات Enigma2. توضح الصفحة طريقة التحقق من التوافق والتثبيت، وتتجنب ذكر أجهزة أو إصدارات مدعومة ما لم تُوثق في ملاحظات الحزمة.
+صفحة هبوط عربية RTL لمشروع Manus IPK المرتبط بإضافات Enigma2، مع كتالوج تصنيفي قابل للبحث مستخرج من ملف الإعدادات المقدم. يعرض الكتالوج الأسماء والتقسيمات فقط؛ ولا ينفذ أوامر التثبيت أو الإزالة.
 
 ## التشغيل والبناء محليًا
 
@@ -15,19 +15,30 @@ npm run dev
 
 يفتح خادم المعاينة على المنفذ 3000. ينتج أمر البناء الملفات الجاهزة للاستضافة في `dist/`.
 
+## كتالوج الإضافات
+
+تُبنى بيانات العرض العامة من ملف `config.json` عبر:
+
+```bash
+node scripts/import-catalog.mjs /path/to/config.json
+```
+
+يستخرج المستورد أسماء العناصر والتصنيفات فقط، ويستبعد أوامر التثبيت والإزالة والمسارات وأسماء الأيقونات. لذلك لا تحتاج عملية البناء والنشر المعتادة إلى ملف `config.json` الأصلي.
+
 ## CI وCD
 
-يفحص سير `.github/workflows/ci.yml` الصفحة عند الدفع إلى `main` وعند فتح أو تحديث Pull Request يستهدف `main`. ينفذ `npm ci` ثم `npm test` ثم `npm run build`، ويرفع ناتج `dist/` كـ artifact لمدة 7 أيام.
+يفحص سير `.github/workflows/ci.yml` الصفحة والكتالوج عند الدفع إلى `main` وعند فتح أو تحديث Pull Request يستهدف `main`. ينفذ `npm ci` ثم `npm test` ثم `npm run build`، ويرفع ناتج `dist/` كـ artifact لمدة 7 أيام.
 
-ينشر سير `.github/workflows/deploy-pages.yml` الموقع تلقائيًا إلى GitHub Pages عند الدفع إلى `main`، ويمكن تشغيله يدويًا من تبويب **Actions**. لا ينشر الـPull Request مباشرة. تم ضبط مصدر GitHub Pages على **GitHub Actions**؛ ولا يحتاج المشروع إلى أسرار أو رموز وصول.
+ينشر سير `.github/workflows/deploy-pages.yml` الموقع تلقائيًا إلى GitHub Pages عند الدفع إلى `main`، ويمكن تشغيله يدويًا من تبويب **Actions**. مصدر Pages مضبوط على **GitHub Actions**. كما يُسجل `public/manus-routes.json` مساري الصفحة الرئيسية والكتالوج لمشروع Manus. لا يحتاج المشروع إلى أسرار أو رموز وصول.
 
-الموقع ثابت ويُبنى بلا خادم أو قاعدة بيانات. [افتح صفحة GitHub Pages المنشورة](https://online4tech.github.io/manus-ipk/). الاستضافة متاحة للمستودعات العامة ضمن GitHub Free مع مراعاة حدود الاستخدام الرسمية للخدمة. [مستند GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
+الموقع ثابت ويُبنى بلا خادم أو قاعدة بيانات. رابط GitHub Pages: [online4tech.github.io/manus-ipk](https://online4tech.github.io/manus-ipk/). رابط Manus: [manusipk-wj8dxwb2.manus.space](https://manusipk-wj8dxwb2.manus.space).
 
-## محتوى الصفحة
+## ملفات المشروع
 
-- `public/index.html` — بنية الصفحة والنص العربي.
-- `public/styles.css` — الهوية البصرية والتجاوب.
-- `public/script.js` — قائمة الهاتف وسنة حقوق النشر.
-- `public/manus-routes.json` — تعريف المسارات لمعاينة Manus.
-- `scripts/check.mjs` — فحوصات بنيوية سريعة.
+- `public/index.html` — الصفحة الرئيسية العربية وروابط الوصول إلى الكتالوج.
+- `public/catalog.html` و`public/catalog.js` و`public/catalog.css` — واجهة الكتالوج والبحث والتصفية.
+- `public/catalog-data.json` — أسماء وتصنيفات عامة فقط، دون أوامر أو مسارات تشغيل.
+- `public/manus-routes.json` — تعريف مسارات الصفحات لمعاينة Manus.
+- `scripts/import-catalog.mjs` — مستورد يعيد إنشاء بيانات العرض الآمنة من ملف إعدادات محلي.
+- `scripts/check.mjs` — فحوصات بنية الصفحة وسلامة حقول بيانات الكتالوج.
 - `scripts/build.mjs` — نسخ ملفات الموقع إلى `dist/`.

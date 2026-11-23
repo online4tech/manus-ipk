@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#091421" />
+    <meta name="description" content="كتالوج تصنيفي قابل للبحث لإضافات وأدوات Enigma2 المذكورة في ملف Manus IPK." />
+    <title>كتالوج Manus IPK — إضافات Enigma2</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230c1d2c'/%3E%3Cpath d='M18 21h12l10 11-10 11H18l10-11-10-11Zm18 0h10l-10 11 10 11H36L26 32l10-11Z' fill='%2356e0d1'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./catalog.css" />
+    <script src="./script.js" defer></script>
+    <script src="./catalog.js" defer></script>
+  </head>
+  <body class="catalog-page">
+    <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="Manus IPK — الرئيسية">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M10 13h10l9 11-9 11H10l9-11-9-11Z" fill="currentColor" /><path d="M28 13h10l-9 11 9 11H28L19 24l9-11Z" fill="currentColor" opacity=".58" /></svg>
+          </span>
+          <span class="brand-copy"><strong>MANUS IPK</strong><small>كتالوج Enigma2</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="فتح القائمة"><span></span><span></span></button>
+        <nav id="main-navigation" class="main-navigation" aria-label="التنقل الرئيسي">
+          <a href="./index.html#features">الفكرة</a>
+          <a href="./catalog.html" aria-current="page">الكتالوج</a>
+          <a href="./index.html#install">التثبيت</a>
+          <a class="button button-small button-outline nav-repo" href="https://github.com/online4tech/manus-ipk" target="_blank" rel="noreferrer">المستودع <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="catalog-main">
+      <section class="catalog-hero">
+        <div class="container catalog-hero-inner">
+          <div class="catalog-hero-copy">
+            <span class="section-kicker">فهرس Manus IPK / 05</span>
+            <h1>كتالوج الإضافات<br /><span>والأدوات.</span></h1>
+            <p>تصفّح تقسيمة ملف الإعدادات وابحث عن العناصر حسب الاسم أو القسم. هذه صفحة فهرسة فقط؛ لا تثبّت عناصر على جهازك ولا تشغّل أوامر طرفية.</p>
+            <a class="button button-primary" href="./index.html">العودة إلى الصفحة الرئيسية <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="catalog-stats" aria-label="ملخص الكتالوج">
+            <article class="catalog-stat"><span class="stat-label">عناصر مفهرسة</span><strong id="catalog-item-count">—</strong><small>اسمًا من الملف المرفق</small></article>
+            <article class="catalog-stat"><span class="stat-label">التصنيفات</span><strong id="catalog-category-count">—</strong><small>رئيسية وفرعية</small></article>
+            <article class="catalog-stat catalog-stat-status"><span class="stat-label">طريقة العرض</span><strong>قراءة فقط</strong><small>بدون تنفيذ أوامر</small></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="container catalog-workspace" aria-label="استكشاف الكتالوج">
+        <aside class="category-panel" aria-label="تصفية حسب القسم">
+          <div class="panel-heading"><div><span class="section-kicker">التقسيمة</span><h2>الأقسام</h2></div><span class="panel-mark" aria-hidden="true">01</span></div>
+          <button class="category-button category-all" id="category-all" type="button" data-category="all" aria-pressed="true">
+            <span class="category-name"><span class="category-symbol" aria-hidden="true">#</span> كل العناصر</span><span class="category-count" id="all-count">—</span>
+          </button>
+          <div class="category-tree" id="catalog-categories"></div>
+        </aside>
+
+        <div class="catalog-content">
+          <div class="catalog-toolbar">
+            <label class="search-box" for="catalog-search">
+              <span class="search-icon" aria-hidden="true">⌕</span>
+              <input id="catalog-search" type="search" autocomplete="off" placeholder="ابحث باسم الإضافة أو القسم..." />
+              <button id="clear-search" class="clear-search" type="button" aria-label="مسح البحث" hidden>مسح</button>
+            </label>
+            <label class="sort-box" for="catalog-sort"><span>الترتيب</span>
+              <select id="catalog-sort">
+                <option value="source">ترتيب الملف</option>
+                <option value="asc">الاسم: أ–ي</option>
+                <option value="desc">الاسم: ي–أ</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="results-heading"><p id="result-summary" role="status" aria-live="polite">جارٍ تحميل الكتالوج...</p><span class="results-rule" aria-hidden="true"></span></div>
+          <div class="catalog-message" id="catalog-message" role="status" hidden></div>
+          <div class="item-grid" id="catalog-grid" aria-live="polite"></div>
+          <div class="empty-state" id="empty-state" hidden>
+            <span class="empty-mark" aria-hidden="true">⌕</span>
+            <h2>لا توجد نتائج مطابقة</h2>
+            <p>جرّب كلمة أخرى أو أزل التصفية الحالية.</p>
+            <button class="button button-outline" id="reset-catalog" type="button">عرض كل العناصر</button>
+          </div>
+          <button class="button button-outline load-more" id="load-more" type="button" hidden>عرض المزيد</button>
+        </div>
+      </section>
+
+      <section class="container catalog-safety-note" aria-labelledby="safety-title">
+        <span class="safety-icon" aria-hidden="true">!</span>
+        <div><h2 id="safety-title">تنبيه قبل التثبيت</h2><p>الكتالوج يعرض الأسماء والتصنيفات فقط، ولا يتحقق تلقائيًا من سلامة السكريبتات أو توافقها. راجع مصدر أي ملف وتعليمات صورة جهازك قبل التثبيت، وخذ نسخة احتياطية عند الحاجة.</p></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand footer-brand" href="./index.html" aria-label="العودة إلى الصفحة الرئيسية"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M10 13h10l9 11-9 11H10l9-11-9-11Z" fill="currentColor"/><path d="M28 13h10l-9 11 9 11H28L19 24l9-11Z" fill="currentColor" opacity=".58"/></svg></span><span class="brand-copy"><strong>MANUS IPK</strong><small>Enigma2 / IPK</small></span></a>
+        <p>فهرس للعرض فقط؛ تفاصيل التوافق والتنفيذ تُراجع في مصدر كل عنصر.</p>
+        <span class="footer-year">© <span id="year">2026</span> Manus IPK</span>
+      </div>
+    </footer>
+  </body>
+</html>
